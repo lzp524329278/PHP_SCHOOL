@@ -1,3 +1,4 @@
+<link href="css/footer.css" rel='stylesheet' type='text/css' />
 <div class="footer">
 	<div class="container">
 		<!--<img src="images/pay.png" class="img-responsive" alt=""/>

@@ -4,7 +4,7 @@ h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
 p {margin: 0;}
 html, body{
-	font-family: 'Raleway', sans-serif;
+	font-family: '微软雅黑', sans-serif;
 	font-size: 100%;
 	background:#fff;
 }
@@ -85,7 +85,7 @@ i.clock_icon{
 }
 ul.clock li.clock_desc{
 	color:#100802;
-	font:400 13px/13px 'Raleway', sans-serif;
+	font:400 13px/13px '微软雅黑', sans-serif;
 	overflow:hidden;
 	margin-top:8px;
 }
@@ -106,7 +106,7 @@ ul.clock li.clock_desc{
 	border:1px solid #f8d5d1;
 	width:85%;
 	line-height: 1.5em;
-	font: 500 13px/13px 'Raleway', sans-serif;
+	font: 500 13px/13px '微软雅黑', sans-serif;
 	-webkit-appearance: none;
 }
 .search input[type="submit"] {
@@ -146,7 +146,7 @@ ul.bag li.bag_right{
 	overflow:hidden;
 }
 ul.bag li.bag_right p{
-	font:500 14px/14px 'Raleway', sans-serif;
+	font:500 14px/14px '微软雅黑', sans-serif;
 	color:#fff;
 }
 .menu {
@@ -316,12 +316,13 @@ ul.list1 li.list1_right{
 	overflow:hidden;
 	text-align: left;
 }
-ul.list1 li.list1_right p{
-	font: 500 16px/16px 'Raleway', sans-serif;
+ul.list1 li.list1_right p,ul.list1 li.list1_right span{
+	font: 500 16px/16px '微软雅黑', sans-serif;
 	color: #fff;
 	margin-top: 23px;
 	line-height: 1.5em;
 }
+
 i.clock1,i.vehicle,i.dollar,i.lock{
 	width: 80px;
 	height: 94px;
@@ -347,12 +348,12 @@ i.dollar{
 }
 .column_center h1{
 	color:#583d28;
-	font:600 40px/40px 'Raleway', sans-serif;
+	font:600 40px/40px '微软雅黑', sans-serif;
 	text-transform:uppercase;
 }
 .column_center h2{
 	color:#583d28;
-	font:500 16px/30px 'Raleway', sans-serif;
+	font:500 16px/30px '微软雅黑', sans-serif;
 }
 ul.sellers{
 	padding:10px;
@@ -373,7 +374,7 @@ ul.sellers li.sellers_desc{
 }
 ul.sellers li.sellers_desc h2{
 	color: #583d28;
-	font: 700 30px/30px 'Raleway', sans-serif;
+	font: 700 30px/30px '微软雅黑', sans-serif;
 	margin-bottom: 0;
 }
 .grid_2 {
@@ -894,33 +895,7 @@ ul.social li a i.linkedin{
 ul.social li a i.skype{
 	background-position:-64px -222px;
 }
-/*--footer--*/
-.footer{
-	background:#573c27;
-	padding:2em 0;
-	text-align:center;
-}
-.footer img{
-	display:inline-block;
-}
-ul.footer_nav{
-	padding:0;
-	margin:1em 0;
-	list-style:none;
-}
-ul.footer_nav li{
-	display:inline-block;
-}
-ul.footer_nav li a{
-	color:#886C58;
-	font-size:0.8125em;
-	margin:0 10px;
-	font-weight:500;
-}
-ul.footer_nav li a:hover{
-	text-decoration:none;
-	color: #ee4a02;
-}
+
 p.copy{
 	color:#886C58;
 	font-size:0.8125em;
@@ -944,7 +919,7 @@ p.copy a{
 }
 .block .block-title strong {
 	display: block;
-	font: normal 14px/16px 'Raleway', sans-serif;
+	font: normal 14px/16px '微软雅黑', sans-serif;
 	min-height: 16px;
 	padding: 1px 0 1px;
 	text-transform: uppercase;
@@ -1496,13 +1471,12 @@ p.cart {
 	color:#df1f26;
 	font-size: 1em;
 	padding-bottom: 5px;
-	margin: 0;
+	margin:0;
 	font-weight:600;
 }
 .register-top-grid div, .register-bottom-grid div {
 	width: 48%;
-	float: left;
-	margin: 10px 0;
+	margin: 10px auto;
 }
 .register-top-grid span, .register-bottom-grid span {
 	color:#999;
@@ -1611,19 +1585,17 @@ div.register-bottom-grid {
 /*--contact--*/
 .to input[type="text"] {
 	padding: 10px;
-	width: 29%;
+	width: 23%;
 	font-size: 0.85em;
 	margin: 10px 0;
 	border: 1px solid #DDD;
     color:#CBCBCB;
 	background: none;
-	float: left;
 	outline: none;
 	-webkit-appearance: none;
 }
 .text {
-	float: left;
-	width: 63%;
+	width: 50%;
 }
 .text input[type="text"], .text textarea {
 	width: 96.5%;
@@ -1638,10 +1610,7 @@ div.register-bottom-grid {
 	resize: none;
 	-webkit-appearance: none;
 }
-.form-submit {
-	float: left;
-	margin: 10px 0px 0 6px;
-}
+
 .form-submit input[type="submit"]{
 	background: #1bccf7;
 	color: #FFF;
@@ -1659,11 +1628,15 @@ div.register-bottom-grid {
 .form-submit input[type="submit"]:hover{
 	background:#e05b5b;
 }
+.contact_box,register{
+	margin:0 auto;
+}
 .contact-top h1{
-	color:#555;
+	color:#DF1F26;
 	font-size:1.5em;
 	text-transform:uppercase;
 	margin-bottom:1em;
+	
 }
 .contact-top_right h2{
 	color:#555;
@@ -1681,17 +1654,7 @@ ul.list li {
 	line-height:2.5em;
 	text-transform: uppercase;
 }
-ul.list li a{
-	color:#000;
-}
-.map{
-	margin-top:3em;
-}
-.map iframe{
-	border:none;
-	width:100%;
-	min-height:300px;
-}
+
 .wishlist{
 	min-height:500px;
 }
@@ -1720,12 +1683,12 @@ ul.bag {
 	width: 35%;
 }
 ul.list1 li.list1_right p {
-	font: 500 13px/14px 'Raleway', sans-serif;
+	font: 500 13px/14px '微软雅黑', sans-serif;
 	margin-top: 28px;
 	line-height:1.5em;
 }	
 .column_center h1 {
-	font: 600 27px/27px 'Raleway', sans-serif;
+	font: 600 27px/27px '微软雅黑', sans-serif;
 }
 .desc h3 {
 	font-size: 1em;
@@ -1868,7 +1831,7 @@ ul.bag {
 	-o-background-size: 100%;
 }
 ul.list1 li.list1_right p {
-	font: 500 25px/25px 'Raleway', sans-serif;
+	font: 500 25px/25px '微软雅黑', sans-serif;
 	margin-top: 37px;
 }
 .box_inner {
@@ -2025,14 +1988,14 @@ ul.bag, ul.clock{
 }
 @media(max-width:480px){
 ul.list1 li.list1_right p {
-	font: 500 16px/16px 'Raleway', sans-serif;
+	font: 500 16px/16px '微软雅黑', sans-serif;
 	margin-top: 40px;
 }
 .column_center h1 {
-	font: 600 18px/18px 'Raleway', sans-serif;
+	font: 600 18px/18px '微软雅黑', sans-serif;
 }
 .column_center h2 {
-	font: 500 14px/20px 'Raleway', sans-serif;
+	font: 500 14px/20px '微软雅黑', sans-serif;
 }
 .heart {
 	bottom: 108px;
@@ -2045,9 +2008,7 @@ ul.list1 li.list1_right p {
 .right-grid a {
 	font-size: 14px;
 }
-ul.footer_nav li a {
-	margin: 0 4px;
-}
+
 .men {
 	padding: 2em 0 2em;
 }
@@ -2104,17 +2065,17 @@ text input[type="text"], .text textarea {
 	padding: 10px;
 }
 ul.list1 li.list1_right p {
-	font: 500 13px/18px 'Raleway', sans-serif;
+	font: 500 13px/18px '微软雅黑', sans-serif;
 	margin-top: 32px;
 }
 .box2, .box3, .box4, .box5 {
 	min-height: 50px;
 }
 .column_center h1 {
-	font: 600 15px/23px 'Raleway', sans-serif;
+	font: 600 15px/23px '微软雅黑', sans-serif;
 }
 ul.sellers li.sellers_desc h2, ul.spinner li.spinner_head h3 {
-	font: 700 20px/30px 'Raleway', sans-serif;
+	font: 700 20px/30px '微软雅黑', sans-serif;
 }
 .heart {
 	bottom: 108px;
@@ -2255,5 +2216,5 @@ h4.head_single {
 	margin: 2em 0 0em;
 	padding: 0 15px;
 }
-}
+
 

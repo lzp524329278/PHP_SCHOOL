@@ -12,10 +12,10 @@
    } 
  </script>-->
  <!-- jQuery 组件导入 -->
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
 
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo HOME_PUBLIC; ?>css/style.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <!--webfont-->
  
@@ -28,6 +28,7 @@
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>-->
 </head>
 <body>
+    <include file="./Application/Home/Public/html/head.html"/>
 <div class="men">
 	<div class="container">
 	    <div class="register">
@@ -56,5 +57,7 @@
 		</div>
 	 </div>
 </div>
+    <include file="./Application/Home/Public/html/footer.html"/>
 </body>
+
 </html>		

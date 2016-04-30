@@ -1,6 +1,3 @@
-<!DOCTYPE HTML>
-<html>
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -11,19 +8,19 @@
    } 
  </script>-->
  <!-- jQuery 组件导入 -->
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
 
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo HOME_PUBLIC; ?>css/style.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <!--webfont-->
  
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/jquery-1.11.1.min.js"></script>
 <!-- dropdown -->
 <!--<script src="js/jquery.easydropdown.js"></script>-->
 <!-- start menu -->
-<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/megamenu.js"></script>
+<link href="<?php echo HOME_PUBLIC; ?>css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 </head>
 <body>
@@ -32,10 +29,10 @@
   	<div class="header_top-box">
 			 <div class="cssmenu">
 				<ul>
-					<li class="active"><a href="login.html">账户</a></li> 
+					<li class="active"><a href="{$user_link}">{$user}</a></li> 
 					<li><a href="wishlist.html"> 购物车</a></li>
-					<li><a href="login.html">登录</a></li> 
-					<li><a href="register.html">注册</a></li>
+					<li><a href="__MODULE__/User/login.html">登录</a></li> 
+					<li><a href="__MODULE__/User/register.html">注册</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
@@ -47,7 +44,7 @@
 	 <div class="header_bottom-box">
 		<div class="header_bottom_left">
 			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+				<a href="{:INDEX_PATH}"><img src="<?php echo HOME_PUBLIC; ?>images/logo.png" alt=""/></a>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -58,7 +55,7 @@
 	  		</div>
 	  		<ul class="bag">
 	  			<a href="#"><i class="bag_left"> </i></a>
-	  			<a href="#"><li class="bag_right"><p>205.00元</p> </li></a>
+	  			<a href="#"><li class="bag_right"><p>0.00元</p> </li></a>
 	  			<div class="clearfix"> </div>
 	  		</ul>
 		</div>
@@ -106,7 +103,7 @@
 								<ul>
 									<li class>
 										<div class="p_left">
-										   <img src="images/t1.jpg" class="img-responsive" alt=""/>
+										   <img src="<?php echo HOME_PUBLIC; ?>images/t1.jpg" class="img-responsive" alt=""/>
 										</div>
 										<div class="p_right">
 											<h4><a href="#">商品名</a></h4>
@@ -117,7 +114,7 @@
 									</li>
 									<li>
 										<div class="p_left">
-										  <img src="images/t2.jpg" class="img-responsive" alt=""/>
+										  <img src="<?php echo HOME_PUBLIC; ?>images/t2.jpg" class="img-responsive" alt=""/>
 										</div>
 										<div class="p_right">
 											<h4><a href="#">商品名</a></h4>
@@ -128,7 +125,7 @@
 									</li>
 									<li>
 										<div class="p_left">
-										   <img src="images/t3.jpg" class="img-responsive" alt=""/>
+										   <img src="<?php echo HOME_PUBLIC; ?>images/t3.jpg" class="img-responsive" alt=""/>
 										</div>
 										<div class="p_right">
 											<h4><a href="#">商品名</a></h4>
@@ -178,7 +175,7 @@
 								<ul>
 									<li class>
 										<div class="p_left">
-										   <img src="images/t1.jpg" class="img-responsive" alt=""/>
+										   <img src="<?php echo HOME_PUBLIC; ?>images/t1.jpg" class="img-responsive" alt=""/>
 										</div>
 										<div class="p_right">
 											<h4><a href="#">商品名</a></h4>
@@ -189,7 +186,7 @@
 									</li>
 									<li>
 										<div class="p_left">
-										  <img src="images/t2.jpg" class="img-responsive" alt=""/>
+										  <img src="<?php echo HOME_PUBLIC; ?>images/t2.jpg" class="img-responsive" alt=""/>
 										</div>
 										<div class="p_right">
 											<h4><a href="#">商品名</a></h4>
@@ -200,7 +197,7 @@
 									</li>
 									<li>
 										<div class="p_left">
-										   <img src="images/t3.jpg" class="img-responsive" alt=""/>
+										   <img src="<?php echo HOME_PUBLIC; ?>images/t3.jpg" class="img-responsive" alt=""/>
 										</div>
 										<div class="p_right">
 											<h4><a href="#">商品名</a></h4>
@@ -220,6 +217,3 @@
 	  </div>
 </div>
 </div>
-
-</body>
-</html>

@@ -1,0 +1,6 @@
+[ 2016-04-28T12:50:18+08:00 ] 127.0.0.1 /software/PHP_SCHOOL/code/index.php?m=Buyer&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Buyer
+

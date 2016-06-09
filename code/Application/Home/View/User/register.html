@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>注册</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+        <link href="<?php echo HOME_PUBLIC; ?>css/style.css" rel='stylesheet' type='text/css' />
+
+        <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/jquery-1.11.1.min.js"></script>
+
+    </head>
+    <body>
+    <include file="./Application/Home/Public/html/head.html"/>
+    <div class="men">
+        <div class="container">
+            <div class="col-md-12 register">
+                <form action="__SELF__" method="post">
+                    <div class="register-top-grid" > 
+                        <h3  style="text-align:center;">个人信息</h3>
+                        <div>
+                            <span>用户名<label>*</label></span>
+                            <input type="text" name="user_id" value={$value}> 
+                        </div>
+                        <div>
+                            <span>密码<label>*</label></span>
+                            <input type="text" name="password">
+                        </div>
+                        <div>
+                            <span>确认密码<label>*</label></span>
+                            <input type="text" name="password2">
+                        </div>
+                        <div>
+                            <span>Email<label>*</label></span>
+                            <input type="text" name="email"> 
+                        </div>
+                        <div>
+                            <span>姓名<label>*</label></span>
+                            <input type="text" name="username"> 
+                        </div>
+                        <div>
+                            <span>手机号码<label>*</label></span>
+                            <input type="text" name="telphone_num"> 
+                        </div>
+                        <div class="text">
+                            <span>联系地址<label>*</label></span>
+                            <textarea name="address"></textarea>
+                        </div>
+                    </div>
+
+                    <center>
+                        <div class="clearfix"> </div>
+                        <div class="register-but">
+                            <input type="submit" name="submit" value="提交">
+                            <div class="clearfix"> </div>
+                        </div>
+                    </center>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<include file="./Application/Home/Public/html/footer.html"/>
+</body>
+</html>		

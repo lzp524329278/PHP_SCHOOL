@@ -1,0 +1,30 @@
+/*--footer--*/
+.footer{
+	background:#573c27;
+	padding:2em 0;
+	text-align:center;
+}
+.footer img{
+	display:inline-block;
+}
+ul.footer_nav{
+	padding:0;
+	margin:1em 0;
+	list-style:none;
+}
+ul.footer_nav li{
+	display:inline-block;
+}
+ul.footer_nav li a{
+	color:#886C58;
+	font-size:0.8125em;
+	margin:0 10px;
+	font-weight:500;
+}
+ul.footer_nav li a:hover{
+	text-decoration:none;
+	color: #ee4a02;
+}
+ul.footer_nav li a {
+	margin: 0 4px;
+}

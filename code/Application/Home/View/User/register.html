@@ -22,32 +22,39 @@
                     <div class="register-top-grid" > 
                         <h3  style="text-align:center;">个人信息</h3>
                         <div>
-                            <span>用户名<label>*</label></span>
-                            <input type="text" name="user_id" value={$value}> 
+                            <span>账号<label>*</label></span>
+                            <input type="text" name="user_id"  value="{:$post['user_id']}"> 
+                            <span style="color: #ff0000">{:$error['user_id']}</span>
                         </div>
                         <div>
                             <span>密码<label>*</label></span>
-                            <input type="text" name="password">
+                            <input type="password" name="password" value="{:$post['password']}">
+                            <span style="color: #ff0000">{:$error['password']}</span>
                         </div>
                         <div>
                             <span>确认密码<label>*</label></span>
-                            <input type="text" name="password2">
+                            <input type="password" name="password2" value="{:$post['password2']}">
+                            <span style="color: #ff0000">{:$error['password2']}</span>
                         </div>
                         <div>
                             <span>Email<label>*</label></span>
-                            <input type="text" name="email"> 
+                            <input type="text" name="email" value="{:$post['email']}"> 
+                            <span style="color: #ff0000">{:$error['email']}</span>
                         </div>
                         <div>
                             <span>姓名<label>*</label></span>
-                            <input type="text" name="username"> 
+                            <input type="text" name="user_name" value="{:$post['user_name']}"> 
+                            <span style="color: #ff0000">{:$error['user_name']}</span>
                         </div>
                         <div>
                             <span>手机号码<label>*</label></span>
-                            <input type="text" name="telphone_num"> 
+                            <input type="text" name="telphone_num" value="{:$post['telphone_num']}"> 
+                            <span style="color: #ff0000">{:$error['telphone_num']}</span>
                         </div>
                         <div class="text">
                             <span>联系地址<label>*</label></span>
-                            <textarea name="address"></textarea>
+                            <textarea name="address" >{:$post['address']}</textarea>
+                            <span style="color: #ff0000">{:$error['address']}</span>
                         </div>
                     </div>
 

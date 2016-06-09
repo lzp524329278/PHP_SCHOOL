@@ -1,0 +1,1480 @@
+[ 2016-05-21T09:31:04+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0500s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T09:31:19+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0030s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by sale_num_month contains '手表' DESC limit 0,9' at line 1
+ [ SQL语句 ] : select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where  order by sale_num_month contains '手表' DESC limit 0,9
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by sale_num_month contains '手表' DESC limit 0,9' at line 1
+ [ SQL语句 ] : select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where  order by sale_num_month contains '手表' DESC limit 0,9
+
+[ 2016-05-21T09:32:19+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'contains '手表' and order by sale_num_month   DESC limit 0,9' at line 1
+ [ SQL语句 ] : select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword contains '手表' and order by sale_num_month   DESC limit 0,9
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'contains '手表' and order by sale_num_month   DESC limit 0,9' at line 1
+ [ SQL语句 ] : select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword contains '手表' and order by sale_num_month   DESC limit 0,9
+
+[ 2016-05-21T09:33:19+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '%手表%'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T09:35:29+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '%手表%'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T09:39:11+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T09:39:14+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0020s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T09:39:18+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '%s%'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:18:00+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0170s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:18:06+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0470s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '%手表%'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:18:36+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '%手表%'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:18:51+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0270s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '%手表%'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:19:18+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0570s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:22:08+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.086005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0170s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:23:27+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0200s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:23:27+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/images/pic1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-21T11:23:27+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/images/pic2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-21T11:23:27+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/images/pic3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-21T11:23:57+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0710s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:28:31+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0090s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-21T11:28:59+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:30:03+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0260s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:30:35+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0320s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-21T11:30:47+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:31:47+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0030s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:34:17+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:35:08+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:36:26+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:37:21+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0090s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-21T11:39:03+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0210s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:39:14+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:39:34+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:39:59+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0720s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:41:01+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:42:49+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:43:04+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0650s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:43:14+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0200s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:43:33+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:45:09+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:45:48+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:46:14+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:47:55+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:48:20+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:48:25+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0310s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:53:55+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0090s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:54:21+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0090s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:55:20+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:55:41+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0230s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:55:52+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T11:57:26+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:02:55+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0100s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:03:00+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.1000s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:03:32+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:04:11+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:04:17+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0100s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:05:32+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0250s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:06:07+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0690s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:07:01+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0110s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:08:00+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0750s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:08:12+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:09:36+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:09:49+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0490s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T12:10:03+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0090s ]
+NOTIC: [8] Use of undefined constant pageNow - assumed 'pageNow' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant pageSize - assumed 'pageSize' F:\PHP_workspace\PHP_SCHOOL\code\Application\Home\Model\GoodsModel.class.php 第 36 行.
+SQL: select name,brand,price,color,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where keyword like '% %'  order by sale_num_month   DESC limit 0,9 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-21T18:38:38+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.067004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.067004s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.3060s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0010s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.043003s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.043003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.235013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.235013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.023001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.023002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024002s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+

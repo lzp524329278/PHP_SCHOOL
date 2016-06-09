@@ -384,6 +384,10 @@ ul.sellers li.sellers_desc h2{
 	position:relative;
 	border: 1px solid #E7DFD1;
 }
+.box_inner.img{
+    max-height: 100%;
+    max-width: 100%;
+}
 .sale-box {
 	position: absolute;
 	top: -1px;
@@ -668,10 +672,9 @@ a.link2:hover{
 	position:relative;
 	border:5px solid #8cb273;
 }
-.thumb{
+.thumb.img{
 	width:340px;
 	height:275px;
-	background:url(../images/thumb1.jpg)no-repeat;
 	display:block;
 	border-bottom:3px solid #8cb273;
 }
@@ -744,6 +747,7 @@ span.actual {
 	margin-top:0;
 }
 .link3 {
+        
 	background: url(../images/cart2.png) no-repeat 5px 9px;
 	display: inline-block;
 	padding: 20px 0 20px 80px;
@@ -1485,7 +1489,7 @@ p.cart {
 	text-transform: uppercase;
 	font-size:0.8125em;
 }
-.register-top-grid input[type="text"], .register-bottom-grid input[type="text"] {
+.register-top-grid input[type="text"], .register-bottom-grid input[type="text"], .register-top-grid input[type="password"] {
 	border: 1px solid #EEE;
 	outline-color:#FF5B36;
 	width: 96%;

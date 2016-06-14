@@ -2,11 +2,19 @@
 <html>
     <head>
     <script type="application/x-javascript">
+<<<<<<< HEAD
         addEventListener("load", function() { setTimeout(hideURLbar, 0);}, false); 
         function hideURLbar(){ 
         window.scrollTo(0,1); 
         } 
     </script>
+=======
+       addEventListener("load", function() { setTimeout(hideURLbar, 0);}, false); 
+       function hideURLbar(){ 
+                    window.scrollTo(0,1); 
+       } 
+     </script>
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
     <!-- jQuery 组件导入 -->
     <link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
 
@@ -14,6 +22,7 @@
     <link href="<?php echo HOME_PUBLIC; ?>css/style.css" rel='stylesheet' type='text/css' />
     <!-- Custom Theme files -->
     <!--webfont-->
+<<<<<<< HEAD
 
     <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/jquery-1.11.1.min.js"></script>
     <!-- start menu -->
@@ -214,6 +223,76 @@
                         document.getElementById('password').innerHTML = result.error.password == undefined ? '' : result.error.password;
                         document.getElementById('password2').innerHTML = result.error.password2 == undefined ? '' : result.error.password2;
                         document.getElementById('email').innerHTML = result.error.email == undefined ? '' : result.error.email;
+=======
+
+    <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/jquery-1.11.1.min.js"></script>
+    <!-- start menu -->
+    <link href="<?php echo HOME_PUBLIC; ?>css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/megamenu.js"></script>
+    <script>$(document).ready(function () {
+            $(".megamenu").megamenu();
+            
+        });
+        
+        function ajaxFunction() {
+            var xmlHttp = false;
+            try {
+                xmlHttp = new ActiveXObject("Msxml2.XMLHTTP"); // ie msxml3.0+（IE7.0及以上）  
+            } catch (e) {
+                try {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP"); //ie msxml2.6（IE5/6）  
+                } catch (e2) {
+                    xmlHttp = new XMLHttpRequest();
+                }
+            } finally {
+                return xmlHttp;
+            }
+        }  
+        function check_search() {
+            if (document.search_form.keyword.value == '商品搜索') {
+                alert('请输入搜索条件');
+            } else {
+                if(document.getElementById('orderby')){
+                   document.getElementById('orderby').value='orderby';
+                }
+                return true;
+            }
+            return false;
+        }
+         var temp = "";
+            function do_ajax(func, url, send, callback) {
+                var xhr = ajaxFunction();
+                if (!xhr) {
+                    return false;
+                }
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.responseText) {
+                        //console.log(xhr.responseText);
+                        callback(xhr.responseText);
+                    }
+                }
+                xhr.open(func, url);
+                xhr.send(send);
+            }
+            function ajax_get_login() {
+                do_ajax('get', '/PHP_SCHOOL/code/index.php/Home/User/login.html', null, function (data) {
+                    temp = document.getElementById('content').innerHTML;
+                    document.getElementById('content').innerHTML = data;
+                });
+            }
+            function ajax_post_login() {
+                do_ajax('post', '/PHP_SCHOOL/code/index.php/Home/User/login.html', new FormData(document.login_form), function (data) {
+                    eval('var result=' + data);
+                    //console.log(result);
+                    if (result.result) {
+                        document.getElementById('content').innerHTML = temp;
+                        document.getElementById('user_name').innerHTML='<li class="active"><a href="#" >'+result.user_name+
+                                '</a></li><li><a href="/PHP_SCHOOL/code/index.php/Home/Order/index.html"> 购物车</a></li>'+
+                            '<li><a href="/PHP_SCHOOL/code/index.php/Home/User/logout.html">注销</a></li> ';
+                                //;
+                    }else{
+                        document.getElementById('error').innerHTML="用户名或密码错误";
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                     }
                 });
                 return false;
@@ -227,11 +306,19 @@
                 <div class="cssmenu">
                     <ul id='user_name'>
                         <?php if(session('?user_id')): ?><li class="active"><a href="#" ><?php echo session('user_name');?></a></li> 
+<<<<<<< HEAD
                             <li><a href="/PHP_SCHOOL/code/index.php/Home/Shoppingcart/index.html"> 购物车</a></li>
                             <li><a href="/PHP_SCHOOL/code/index.php/Home/User/logout.html">注销</a></li> 
                             <?php else: ?> 
                             <li><a href="javascript:ajax_get_login(0)">登录</a></li> 
                             <li><a href="javascript:ajax_get_register(0)">注册</a></li><?php endif; ?>
+=======
+                            <li><a href="/PHP_SCHOOL/code/index.php/Home/Order/index.html"> 购物车</a></li>
+                            <li><a href="/PHP_SCHOOL/code/index.php/Home/User/logout.html">注销</a></li> 
+                            <?php else: ?> 
+                            <li><a href="javascript:ajax_get_login()">登录</a></li> 
+                            <li><a href="/PHP_SCHOOL/code/index.php/Home/User/register.html">注册</a></li><?php endif; ?>
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                     </ul>
                 </div>
                 <div class="clearfix"></div>
@@ -253,14 +340,23 @@
                             <input type="text" value="商品搜索" id='keyword' name="keyword" onfocus="this.value = '';" onblur="if (this.value == '') {
                                         this.value = '商品搜索';
                                     }">
+<<<<<<< HEAD
                             <input type="submit" value="" onclick='return check_search();'>
+=======
+                                    <input type="submit" value="" onclick='return check_search();'>
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                         </form>
                     </div>
                     <ul class="bag">
                         <a href="#"><i class="bag_left"> </i></a>
                         <a href="#"><li class="bag_right">
+<<<<<<< HEAD
                                 <p style="text-align: center;" id='total_price'>
                             <?php if(session('?shoppingcart_money')): echo session('shoppingcart_money');?>
+=======
+                                <p style="text-align: center;">
+                            <?php if(session('?user_id')): echo session('shoppingcart_money');?>
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                 <?php else: ?>
                                 0.00元<?php endif; ?>
                             </p> </li></a>
@@ -526,8 +622,13 @@
                                                 <h3><?php echo ($row['name']); ?></h3>
                                                 <h4><?php echo ($row['price']); ?>元</h4>
                                                 <ul class="list2">
+<<<<<<< HEAD
                                                     <li class="list2_left"><span class="m_1"><a href="/PHP_SCHOOL/code/index.php/Home/Shoppingcart/addToShoppingcart?goods_id=<?php echo ($row['goods_id']); ?>&num=1" class="link">添加到购物车</a></span></li>
                                                     <li class="list2_right"><span class="m_2"><a href="/PHP_SCHOOL/code/index.php/Home/Goods/index?goods_id=<?php echo ($row['goods_id']); ?>" class="link1">详情</a></span></li>
+=======
+                                                    <li class="list2_left"><span class="m_1"><a href="#" class="link">添加到购物车</a></span></li>
+                                                    <li class="list2_right"><span class="m_2"><a href="#" class="link1">详情</a></span></li>
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                                     <div class="clearfix"> </div>
                                                 </ul>
                                                 <div class="heart"> </div>
@@ -546,11 +647,19 @@
                     </ul>
                     <ul id="flexiselDemo3">
                         <?php if($new_goods): if(is_array($new_goods)): foreach($new_goods as $key=>$row): ?><li>
+<<<<<<< HEAD
                                 <center><a href="/PHP_SCHOOL/code/index.php/Home/Goods/index?goods_id=<?php echo ($row['goods_id']); ?>"><img src="<?php echo $row['img1'];?>"  style="height:200px; min-height: 125px" class="img-responsive" /></a></center>
                                 <div class="grid-flex">
                                     <h4><?php echo $row['name'];?></h4>
                                     <p><?php echo $row['price'];?>元</p>
                                     <div class="m_3"><a href="/PHP_SCHOOL/code/index.php/Home/Shoppingcart/addToShoppingcart?goods_id=<?php echo ($row['goods_id']); ?>&num=1" class="link2">添加到购物车</a></div>
+=======
+                                <center><img src="<?php echo $row['img1'];?>"  style="height:200px; min-height: 125px" class="img-responsive" /></center>
+                                <div class="grid-flex">
+                                    <h4><?php echo $row['name'];?></h4>
+                                    <p><?php echo $row['price'];?>元</p>
+                                    <div class="m_3"><a href="#" class="link2">添加到购物车</a></div>
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                     <div class="ticket"> </div>
                                 </div>
                                 </li><?php endforeach; endif; endif; ?>
@@ -586,15 +695,23 @@
                 </div>
             </div>
             <div class="container">
+<<<<<<< HEAD
                 <?php if($discount_goods): ?><div class="content_middle_bottom">
+=======
+                <div class="content_middle_bottom">
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                     <ul class="spinner">
                         <i class="spinner_icon"> </i>
                         <li class="spinner_head"><h3>促销</h3></li>
                         <div class="clearfix"> </div>
                     </ul>
 
+<<<<<<< HEAD
                     
                         <?php if(is_array($discount_goods)): foreach($discount_goods as $key=>$row): ?><div class="col-md-4">
+=======
+                    <?php if($discount_goods): if(is_array($discount_goods)): foreach($discount_goods as $key=>$row): ?><div class="col-md-4">
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                 <div class="timer_box">
                                     <div class="thumb"> 
                                         <center>
@@ -609,10 +726,16 @@
                                         <span class="actual"><?php echo $row['discount_price'];?>元</span>
                                     </div>
                                 </div>
+<<<<<<< HEAD
                                 <a href="/PHP_SCHOOL/code/index.php/Home/Goods/index?goods_id=<?php echo $row['goods_id'];?>"><div class="m_3 deal"><div class="link3">我要购买</div></div></a>
                             </div><?php endforeach; endif; ?>
                 </div><?php endif; ?>
 
+=======
+                                <a href="#"><div class="m_3 deal"><div class="link3">我要购买</div></div></a>
+                            </div><?php endforeach; endif; endif; ?>
+                </div>
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
             </div>
         </div>
     <link href="<?php echo HOME_PUBLIC; ?>css/footer.css" rel='stylesheet' type='text/css' />

@@ -15,11 +15,16 @@
 			   <div class="col-md-6 login-left">
 			  	 <h3>我是新用户</h3>
 				 <p>通过注册账户，您可以正常的享受购物功能，<br/>包括存储您的收货地址，购物车功能,<br/>还可以给我们留言反馈.</p>
+<<<<<<< HEAD
 				 <a class="acount-btn" href="javascript:ajax_get_register(1)">注册</a>
+=======
+				 <a class="acount-btn" href="#">注册</a>
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
 			   </div>
 			   <div class="col-md-6 login-right">
 			  	<h3>我已有账号</h3>
 				<p>如果你在本商城已经注册账户，请登录</p>
+<<<<<<< HEAD
 				<form name='login_form' onsubmit="return false;">
 				  <div>
 					<span>用户名<label>*</label></span>
@@ -31,6 +36,19 @@
 				  </div>
 				  <a class="forgot" href="javascript:ajax_get_reset()">忘记密码?&nbsp;</a>
                                   <input type="submit" value="Login"  onclick="return ajax_post_login();"/>
+=======
+				<form name='login_form' action="__SELF__" method="post">
+				  <div>
+					<span>用户名<label>*</label></span>
+					<input type="text" name="user_id"/>
+				  </div>
+				  <div>
+					<span>密码<label>*</label></span>
+					<input type="password" name="password" />
+				  </div>
+				  <a class="forgot" href="#">忘记密码?&nbsp;</a>
+                                  <input type="submit" value="Login" onclick="return ajax_post_login()"/>
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                   <span style="color: #ff0000" id='error'>{:$error}</span>
 			    </form>
 			   </div>	

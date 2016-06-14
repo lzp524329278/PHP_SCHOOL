@@ -1,22 +1,21 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
-    <head>
-        <title>注册</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title><?php echo $title;?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
 
-        <link href="<?php echo HOME_PUBLIC; ?>css/style.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo HOME_PUBLIC; ?>css/style.css" rel='stylesheet' type='text/css' />
 
-        <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/jquery-1.11.1.min.js"></script>
-    </head>
-    <body>
-<<<<<<< HEAD
-    
-=======
-    <head>
+<script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/jquery-1.11.1.min.js"></script>
+
+<link rel="stylesheet" href="<?php echo HOME_PUBLIC; ?>css/etalage.css">
+</head>
+<body>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -248,90 +247,30 @@
         </div>
     </div>
 
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
-    <div class="men">
-        <div class="container">
-            <div class="col-md-12 register">
-                <form name='register_form' onsubmit="return false">
-                    <div class="register-top-grid" > 
-                        <h3  style="text-align:center;">个人信息</h3>
-                        <div>
-                            <span>账号<label>*</label></span>
-                            <input type="text" name="user_id"  value="<?php echo $post['user_id'];?>"> 
-<<<<<<< HEAD
-                            <span  id='user_id_from' style="color: #ff0000" ><?php echo $error['user_id'];?></span>
-=======
-                            <span style="color: #ff0000"><?php echo $error['user_id'];?></span>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
-                        </div>
-                        <div>
-                            <span>密码<label>*</label></span>
-                            <input type="password" name="password" value="<?php echo $post['password'];?>">
-<<<<<<< HEAD
-                            <span id='password' style="color: #ff0000"><?php echo $error['password'];?></span>
-=======
-                            <span style="color: #ff0000"><?php echo $error['password'];?></span>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
-                        </div>
-                        <div>
-                            <span>确认密码<label>*</label></span>
-                            <input type="password" name="password2" value="<?php echo $post['password2'];?>">
-<<<<<<< HEAD
-                            <span id='password2' style="color: #ff0000"><?php echo $error['password2'];?></span>
-=======
-                            <span style="color: #ff0000"><?php echo $error['password2'];?></span>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
-                        </div>
-                        <div>
-                            <span>Email<label>*</label></span>
-                            <input type="text" name="email" value="<?php echo $post['email'];?>"> 
-<<<<<<< HEAD
-                            <span id='email' style="color: #ff0000"><?php echo $error['email'];?></span>
-=======
-                            <span style="color: #ff0000"><?php echo $error['email'];?></span>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
-                        </div>
-                        <div>
-                            <span>姓名<label>*</label></span>
-                            <input type="text" name="user_name" value="<?php echo $post['user_name'];?>"> 
-<<<<<<< HEAD
-                            <span id='user_name_from' style="color: #ff0000"><?php echo $error['user_name'];?></span>
-=======
-                            <span style="color: #ff0000"><?php echo $error['user_name'];?></span>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
-                        </div>
-                        <div>
-                            <span>手机号码<label>*</label></span>
-                            <input type="text" name="telphone_num" value="<?php echo $post['telphone_num'];?>"> 
-<<<<<<< HEAD
-                            <span id='telphone_num' style="color: #ff0000"><?php echo $error['telphone_num'];?></span>
-=======
-                            <span style="color: #ff0000"><?php echo $error['telphone_num'];?></span>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
-                        </div>
-                        <div class="text">
-                            <span>联系地址<label>*</label></span>
-                            <textarea name="address" ><?php echo $post['address'];?></textarea>
-<<<<<<< HEAD
-                            <span id='address' style="color: #ff0000"><?php echo $error['address'];?></span>
-=======
-                            <span style="color: #ff0000"><?php echo $error['address'];?></span>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
-                        </div>
-                    </div>
-
-                    <center>
-                        <div class="clearfix"> </div>
-                        <div class="register-but">
-                            <input type="submit" name="submit" value="提交" onclick="return ajax_post_register()">
-                            <div class="clearfix"> </div>
-                        </div>
-                    </center>
-                </form>
-            </div>
-
-        </div>
-    </div>
+<div class="men">
+	<div class="container">
+	    <div class="error-404 text-center">
+			<h1><?php echo $title;?></h1>
+			<p><?php echo $message;?></p>
+			<a class="b-home" href="<?php echo $redirect_link;?>">立刻跳转</a>
+		 </div>
+      </div>
+</div>
+<link href="<?php echo HOME_PUBLIC; ?>css/footer.css" rel='stylesheet' type='text/css' />
+<div class="footer">
+	<div class="container">
+		<!--<img src="images/pay.png" class="img-responsive" alt=""/>
+		<ul class="footer_nav">
+		  <li><a href="#">��ҳ</a></li>
+		  <li><a href="#">Blog</a></li>
+		  <li><a href="#">Shop</a></li>
+		  <li><a href="#">Media</a></li>
+		  <li><a href="#">Features</a></li>
+		  <li><a href="#">About Us</a></li>
+		  <li><a href="contact.html">Contact Us</a></li>
+		</ul>-->
+		<p class="copy">Copyright &copy; 2016-<?php echo date("Y")?>乐购商城All rights reserved. </p>
+	</div>
 </div>
 </body>
 </html>

@@ -34,7 +34,11 @@ CREATE TABLE IF NOT EXISTS `legoushop`.`legoushop_user` (
 -- -----------------------------------------------------
 -- Table `legoushop`.`legoushop_goods`
 -- -----------------------------------------------------
+<<<<<<< HEAD
 CREATE TABLE IF NOT EXISTS `legoushop`.`legoushop_goods` (
+=======
+CREATE TABLE IF NOT EXISTS `legouShop`.`legouShop_goods` (
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
   `goods_id` BIGINT(16) NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(50) NOT NULL,
   `brand` VARCHAR(20) NOT NULL,
@@ -87,7 +91,11 @@ CREATE TABLE IF NOT EXISTS `legoushop`.`legoushop_shoppingCart` (
 -- -----------------------------------------------------
 -- Table `legoushop`.`legoushop_order`
 -- -----------------------------------------------------
+<<<<<<< HEAD
 CREATE TABLE IF NOT EXISTS `legoushop`.`legoushop_order` (
+=======
+CREATE TABLE IF NOT EXISTS `legouShop`.`legouShop_order` (
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
   `order_id` BIGINT(16) NOT NULL AUTO_INCREMENT,
   `user_id` VARCHAR(16) NOT NULL,
   `goods_id` BIGINT(16) NOT NULL,
@@ -111,9 +119,15 @@ CREATE TABLE IF NOT EXISTS `legoushop`.`legoushop_order` (
 
 
 -- -----------------------------------------------------
+<<<<<<< HEAD
 -- Table `legoushop`.`legoushop_session`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `legoushop`.`legoushop_session` (
+=======
+-- Table `legouShop`.`legoushop_session`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `legouShop`.`legoushop_session` (
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
   `session_id` VARCHAR(255) NOT NULL,
   `session_expire` INT(11) NOT NULL,
   `session_data` BLOB NULL,

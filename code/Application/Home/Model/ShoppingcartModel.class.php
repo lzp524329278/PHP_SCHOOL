@@ -13,6 +13,7 @@ class ShoppingcartModel extends Model {
         //设置查询条件
         $condition['user_id'] = session('user_id');
         $this->where($condition);
+<<<<<<< HEAD
 
         $result = $this->select();
         if (!$result) {
@@ -98,6 +99,19 @@ class ShoppingcartModel extends Model {
             return $result;
         }
         return false;
+=======
+        
+        $result=$this->select();
+        if(!$result){
+            return '0.00元';
+        }
+        $total=0.0;
+        foreach ($result as $row) {
+            $total+=$row['num']*$row['per_price'];
+        }
+        return $total.'元';
+        
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
     }
 
 }

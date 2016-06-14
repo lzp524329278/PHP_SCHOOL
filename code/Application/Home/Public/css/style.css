@@ -389,6 +389,10 @@ ul.sellers li.sellers_desc h2{
     max-height: 100%;
     max-width: 100%;
 }
+.box_inner.img{
+    max-height: 100%;
+    max-width: 100%;
+}
 .sale-box {
     position: absolute;
     top: -1px;
@@ -674,10 +678,17 @@ a.link2:hover{
     border:5px solid #8cb273;
 }
 .thumb.img{
+<<<<<<< HEAD
     width:340px;
     height:275px;
     display:block;
     border-bottom:3px solid #8cb273;
+=======
+	width:340px;
+	height:275px;
+	display:block;
+	border-bottom:3px solid #8cb273;
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
 }
 .timer_grid{
     position: absolute;
@@ -748,6 +759,7 @@ span.actual {
     margin-top:0;
 }
 .link3 {
+<<<<<<< HEAD
 
     background: url(../images/cart2.png) no-repeat 5px 9px;
     display: inline-block;
@@ -761,6 +773,21 @@ span.actual {
     -webkit-text-shadow: 1px 1px 0px #B8B8B8;
     -moz-text-shadow: 1px 1px 0px #B8B8B8;
     -o-text-shadow: 1px 1px 0px #B8B8B8;
+=======
+        
+	background: url(../images/cart2.png) no-repeat 5px 9px;
+	display: inline-block;
+	padding: 20px 0 20px 80px;
+	line-height: 19px;
+	font-size: 30px;
+	font-style: normal;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 1px 1px 0px #B8B8B8;
+	-webkit-text-shadow: 1px 1px 0px #B8B8B8;
+	-moz-text-shadow: 1px 1px 0px #B8B8B8;
+	-o-text-shadow: 1px 1px 0px #B8B8B8;
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
 }
 ul.spinner{
     padding:10px 0;
@@ -1484,6 +1511,7 @@ p.cart {
     margin: 10px auto;
 }
 .register-top-grid span, .register-bottom-grid span {
+<<<<<<< HEAD
     color:#999;
     padding-bottom: 0.2em;
     display: block;
@@ -1497,6 +1525,21 @@ p.cart {
     font-size: 1em;
     padding: 0.5em;
     -webkit-appearance: none;
+=======
+	color:#999;
+	padding-bottom: 0.2em;
+	display: block;
+	text-transform: uppercase;
+	font-size:0.8125em;
+}
+.register-top-grid input[type="text"], .register-bottom-grid input[type="text"], .register-top-grid input[type="password"] {
+	border: 1px solid #EEE;
+	outline-color:#FF5B36;
+	width: 96%;
+	font-size: 1em;
+	padding: 0.5em;
+	-webkit-appearance: none;
+>>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
 }
 .checkbox {
     margin-bottom: 4px;

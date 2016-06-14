@@ -4,19 +4,11 @@
         <title>商品列表页</title>
     <head>
     <script type="application/x-javascript">
-<<<<<<< HEAD
         addEventListener("load", function() { setTimeout(hideURLbar, 0);}, false); 
         function hideURLbar(){ 
         window.scrollTo(0,1); 
         } 
     </script>
-=======
-       addEventListener("load", function() { setTimeout(hideURLbar, 0);}, false); 
-       function hideURLbar(){ 
-                    window.scrollTo(0,1); 
-       } 
-     </script>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
     <!-- jQuery 组件导入 -->
     <link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
 
@@ -29,7 +21,6 @@
     <!-- start menu -->
     <link href="<?php echo HOME_PUBLIC; ?>css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/megamenu.js"></script>
-<<<<<<< HEAD
 <script type='text/javascript' src='<?php echo HOME_PUBLIC;?>js/easydialog.min.js'></script>
 <link href='<?php echo HOME_PUBLIC;?>css/easydialog.css' rel='stylesheet' type='text/css' />
 <script>
@@ -54,19 +45,11 @@
                 return false;
             }
         }
-=======
-    <script>$(document).ready(function () {
-            $(".megamenu").megamenu();
-            
-        });
-        
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
         function ajaxFunction() {
             var xmlHttp = false;
             try {
                 xmlHttp = new ActiveXObject("Msxml2.XMLHTTP"); // ie msxml3.0+（IE7.0及以上）  
             } catch (e) {
-<<<<<<< HEAD
                 //alert('第一个不好使');
                 try {
                     xmlHttp = new ActiveXObject("Microsoft.XMLHTTP"); //ie msxml2.6（IE5/6）  
@@ -89,29 +72,10 @@
                     document.getElementById('orderby').value = 'orderby';
                 }
                 //window.location='/PHP_SCHOOL/code/index.php/Home/Search/index?page=1&keyword='+document.search_form.keyword.value;
-=======
-                try {
-                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP"); //ie msxml2.6（IE5/6）  
-                } catch (e2) {
-                    xmlHttp = new XMLHttpRequest();
-                }
-            } finally {
-                return xmlHttp;
-            }
-        }  
-        function check_search() {
-            if (document.search_form.keyword.value == '商品搜索') {
-                alert('请输入搜索条件');
-            } else {
-                if(document.getElementById('orderby')){
-                   document.getElementById('orderby').value='orderby';
-                }
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                 return true;
             }
             return false;
         }
-<<<<<<< HEAD
         var temp = "";
         var flag = true;
         function do_ajax(func, url, send, callback) {
@@ -252,41 +216,6 @@
                         document.getElementById('password').innerHTML = result.error.password == undefined ? '' : result.error.password;
                         document.getElementById('password2').innerHTML = result.error.password2 == undefined ? '' : result.error.password2;
                         document.getElementById('email').innerHTML = result.error.email == undefined ? '' : result.error.email;
-=======
-         var temp = "";
-            function do_ajax(func, url, send, callback) {
-                var xhr = ajaxFunction();
-                if (!xhr) {
-                    return false;
-                }
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4 && xhr.responseText) {
-                        //console.log(xhr.responseText);
-                        callback(xhr.responseText);
-                    }
-                }
-                xhr.open(func, url);
-                xhr.send(send);
-            }
-            function ajax_get_login() {
-                do_ajax('get', '/PHP_SCHOOL/code/index.php/Home/User/login.html', null, function (data) {
-                    temp = document.getElementById('content').innerHTML;
-                    document.getElementById('content').innerHTML = data;
-                });
-            }
-            function ajax_post_login() {
-                do_ajax('post', '/PHP_SCHOOL/code/index.php/Home/User/login.html', new FormData(document.login_form), function (data) {
-                    eval('var result=' + data);
-                    //console.log(result);
-                    if (result.result) {
-                        document.getElementById('content').innerHTML = temp;
-                        document.getElementById('user_name').innerHTML='<li class="active"><a href="#" >'+result.user_name+
-                                '</a></li><li><a href="/PHP_SCHOOL/code/index.php/Home/Order/index.html"> 购物车</a></li>'+
-                            '<li><a href="/PHP_SCHOOL/code/index.php/Home/User/logout.html">注销</a></li> ';
-                                //;
-                    }else{
-                        document.getElementById('error').innerHTML="用户名或密码错误";
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                     }
                 });
                 return false;
@@ -300,19 +229,11 @@
                 <div class="cssmenu">
                     <ul id='user_name'>
                         <?php if(session('?user_id')): ?><li class="active"><a href="#" ><?php echo session('user_name');?></a></li> 
-<<<<<<< HEAD
                             <li><a href="/PHP_SCHOOL/code/index.php/Home/Shoppingcart/index.html"> 购物车</a></li>
                             <li><a href="/PHP_SCHOOL/code/index.php/Home/User/logout.html">注销</a></li> 
                             <?php else: ?> 
                             <li><a href="javascript:ajax_get_login(0)">登录</a></li> 
                             <li><a href="javascript:ajax_get_register(0)">注册</a></li><?php endif; ?>
-=======
-                            <li><a href="/PHP_SCHOOL/code/index.php/Home/Order/index.html"> 购物车</a></li>
-                            <li><a href="/PHP_SCHOOL/code/index.php/Home/User/logout.html">注销</a></li> 
-                            <?php else: ?> 
-                            <li><a href="javascript:ajax_get_login()">登录</a></li> 
-                            <li><a href="/PHP_SCHOOL/code/index.php/Home/User/register.html">注册</a></li><?php endif; ?>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                     </ul>
                 </div>
                 <div class="clearfix"></div>
@@ -334,23 +255,14 @@
                             <input type="text" value="商品搜索" id='keyword' name="keyword" onfocus="this.value = '';" onblur="if (this.value == '') {
                                         this.value = '商品搜索';
                                     }">
-<<<<<<< HEAD
                             <input type="submit" value="" onclick='return check_search();'>
-=======
-                                    <input type="submit" value="" onclick='return check_search();'>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                         </form>
                     </div>
                     <ul class="bag">
                         <a href="#"><i class="bag_left"> </i></a>
                         <a href="#"><li class="bag_right">
-<<<<<<< HEAD
                                 <p style="text-align: center;" id='total_price'>
                             <?php if(session('?shoppingcart_money')): echo session('shoppingcart_money');?>
-=======
-                                <p style="text-align: center;">
-                            <?php if(session('?user_id')): echo session('shoppingcart_money');?>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                 <?php else: ?>
                                 0.00元<?php endif; ?>
                             </p> </li></a>
@@ -523,15 +435,9 @@
     <script>
         var now_page = 1;
         function inner_data(data) {
-<<<<<<< HEAD
         //console.log(data);
         eval("var json_array=" + data);
         //console.log(json_array);
-=======
-        console.log(data);
-        eval("var json_array=" + data);
-        console.log(json_array);
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
         now_page = json_array.now_page;
         var s = '';
         for (var i = 0; i < json_array.result.length; i++) {
@@ -600,22 +506,14 @@
                                     <ol id="brand">
                                         <!--                                        <li> <a href="#">品牌1</a> (2) </li>
                                                                                 <li> <a href="#">品牌2</a> (1) </li>-->
-<<<<<<< HEAD
                                         <?php $__FOR_START_8110__=0;$__FOR_END_8110__=count($return['brand']);for($i=$__FOR_START_8110__;$i < $__FOR_END_8110__;$i+=1){ ?><li> <a href="javascirpt:void(0)" onclick="to_filter('brand', '<?php echo ($return['brand'][$i]['brand']); ?>')"><?php echo ($return['brand'][$i]['brand']); ?></a> (<?php echo ($return['brand'][$i]['count']); ?>) </li><?php } ?>
-=======
-                                        <?php $__FOR_START_11224__=0;$__FOR_END_11224__=count($return['brand']);for($i=$__FOR_START_11224__;$i < $__FOR_END_11224__;$i+=1){ ?><li> <a href="javascirpt:void(0)" onclick="to_filter('brand', '<?php echo ($return['brand'][$i]['brand']); ?>')"><?php echo ($return['brand'][$i]['brand']); ?></a> (<?php echo ($return['brand'][$i]['count']); ?>) </li><?php } ?>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                         <li><a href="javascript:void(0)" style="color:red;" onclick="to_page(1)">重置</a></li>
                                     </ol>
                                 </dd>
                                 <dt class="last odd">颜色</dt>
                                 <dd class="last odd">
                                     <ol id="color">
-<<<<<<< HEAD
                                         <?php $__FOR_START_12623__=0;$__FOR_END_12623__=count($return['color']);for($i=$__FOR_START_12623__;$i < $__FOR_END_12623__;$i+=1){ ?><li> <a href="javascirpt:void(0)" onclick="to_filter('color', '<?php echo ($return['color'][$i]['color']); ?>')"><?php echo ($return['color'][$i]['color']); ?></a> (<?php echo ($return['color'][$i]['count']); ?>) </li><?php } ?>
-=======
-                                        <?php $__FOR_START_11057__=0;$__FOR_END_11057__=count($return['color']);for($i=$__FOR_START_11057__;$i < $__FOR_END_11057__;$i+=1){ ?><li> <a href="javascirpt:void(0)" onclick="to_filter('color', '<?php echo ($return['color'][$i]['color']); ?>')"><?php echo ($return['color'][$i]['color']); ?></a> (<?php echo ($return['color'][$i]['count']); ?>) </li><?php } ?>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                         <li><a href="javascript:void(0)" style="color:red;" onclick="to_page(1)">重置</a></li>
                                     </ol>
                                 </dd>
@@ -645,11 +543,7 @@
                                     <?php if(($start+6 < $return['total_page'] )): $end = $start+6; ?>
                                         <?php else: ?>
                                         <?php $end = $return['total_page']; endif; ?>
-<<<<<<< HEAD
                                     <?php $__FOR_START_16604__=$start;$__FOR_END_16604__=$end+1;for($i=$__FOR_START_16604__;$i < $__FOR_END_16604__;$i+=1){ if($return['now_page'] == $i): ?><li><?php echo ($i); ?></li>
-=======
-                                    <?php $__FOR_START_534__=$start;$__FOR_END_534__=$end+1;for($i=$__FOR_START_534__;$i < $__FOR_END_534__;$i+=1){ if($return['now_page'] == $i): ?><li><?php echo ($i); ?></li>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                             <?php else: ?>
                                             <li><a href="javascript:void(0)" onclick="to_page(<?php echo ($i); ?>)"><?php echo ($i); ?></a></li><?php endif; } ?>
                                 </div>
@@ -662,11 +556,7 @@
                         <?php if(is_array($return['result'])): $i = 0; $__LIST__ = $return['result'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if(($i-1)%3 == 0): ?><div class="span_2"><?php endif; ?>
 
                             <div class="col_1_of_single1 span_1_of_single1"> 
-<<<<<<< HEAD
                                 <a href="/PHP_SCHOOL/code/index.php/Home/Goods/index?goods_id=<?php echo ($vo["goods_id"]); ?>"> <img src="<?php echo ($vo["img1"]); ?>" class="img-responsive" style="height:200px;" alt=""/>
-=======
-                                <a href="#"> <img src="<?php echo ($vo["img1"]); ?>" class="img-responsive" style="height:200px;" alt=""/>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                     <h3><?php echo ($vo["name"]); ?></h3><p><?php echo ($vo["details"]); ?></p>
                                     <h4>
                                         <?php if($vo["discount_status"] == 1): echo ($vo["discount_price"]); ?>

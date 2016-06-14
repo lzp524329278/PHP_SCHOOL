@@ -11805,7 +11805,6 @@ SQL: SELECT color ,count(*) as count FROM legoushop.legoushop_goods where keywor
 SQL: SELECT brand ,count(*) as count FROM legoushop.legoushop_goods where keyword like '%测试%' group by brand [ RunTime:0.0000s ]
 SQL: SELECT COUNT(*) AS tp_count FROM `legoushop_goods` WHERE ( keyword like'%测试%' ) LIMIT 1   [ RunTime:0.0000s ]
 
-<<<<<<< HEAD
 [ 2016-06-09T20:22:08+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/Search/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -13693,5 +13692,3 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
 
-=======
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff

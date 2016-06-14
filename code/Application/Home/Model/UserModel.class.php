@@ -13,7 +13,6 @@ class UserModel extends Model {
     //表单验证部分
     protected $patchValidate = true;
     protected $_validate = array(
-<<<<<<< HEAD
         array('user_id', 'require', '帐号不能为空', self::EXISTS_VALIDATE),
         array('user_id', '6,16', '帐号长度不正确(6-16位)', 0, 'length'),
         array('user_id', 'check_user_id', '帐号已经存在！', 0, 'callback'),
@@ -23,14 +22,6 @@ class UserModel extends Model {
         array('password', 'require', '密码不能为空', self::EXISTS_VALIDATE),
         array('password2', 'require', '确认密码不能为空', self::EXISTS_VALIDATE),
         array('password2', 'password', '确认密码不正确', 0, 'confirm'), // 验证确认密码是否和密码一致
-=======
-        array('user_id', 'check_user_id', '帐号已经存在！', 0, 'callback'),
-        array('user_id', 'require', '帐号不能为空', self::EXISTS_VALIDATE),
-        array('user_id', '6,16', '帐号长度不正确(6-16位)', 0, 'length'),
-        array('password', 'require', '密码不能为空', self::EXISTS_VALIDATE),
-        array('password2', 'require', '确认密码不能为空', self::EXISTS_VALIDATE),
-        array('password', 'password2', '确认密码不正确', 0, 'confirm'), // 验证确认密码是否和密码一致
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
         array('password', '6,16', '密码长度不正确(6-16位)', 0, 'length'),
         array('email', 'require', 'email不能为空', self::EXISTS_VALIDATE),
         array('email', 'email', 'email格式不对'), // 
@@ -51,7 +42,6 @@ class UserModel extends Model {
         }
         return true;
     }
-<<<<<<< HEAD
      //表单验证，检查注册的用户名是否存在
     protected function check_lost_user_id($user_id) {
         $this->field(array('user_id'));
@@ -61,8 +51,6 @@ class UserModel extends Model {
         }
         return false;
     }
-=======
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
 
     //注册
     public function register($data) {
@@ -78,7 +66,6 @@ class UserModel extends Model {
             return false;
         }
     }
-<<<<<<< HEAD
     //找回密码
     public function resetpass($data){
         $change['password']=$data['password'];
@@ -89,9 +76,6 @@ class UserModel extends Model {
             return false;
         }
     }
-=======
-
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
     //查询当前购物车的价格总额
     public function get_shopping_cart_money() {
         //设置查询字段为个数和单价

@@ -103,13 +103,8 @@
                                                 <h3>{$row['name']}</h3>
                                                 <h4>{$row['price']}元</h4>
                                                 <ul class="list2">
-<<<<<<< HEAD
                                                     <li class="list2_left"><span class="m_1"><a href="__MODULE__/Shoppingcart/addToShoppingcart?goods_id={$row['goods_id']}&num=1" class="link">添加到购物车</a></span></li>
                                                     <li class="list2_right"><span class="m_2"><a href="__MODULE__/Goods/index?goods_id={$row['goods_id']}" class="link1">详情</a></span></li>
-=======
-                                                    <li class="list2_left"><span class="m_1"><a href="#" class="link">添加到购物车</a></span></li>
-                                                    <li class="list2_right"><span class="m_2"><a href="#" class="link1">详情</a></span></li>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                                     <div class="clearfix"> </div>
                                                 </ul>
                                                 <div class="heart"> </div>
@@ -132,19 +127,11 @@
                         <if condition="$new_goods" >
                             <foreach name="new_goods" item="row">
                                 <li>
-<<<<<<< HEAD
                                 <center><a href="__MODULE__/Goods/index?goods_id={$row['goods_id']}"><img src="{:$row['img1']}"  style="height:200px; min-height: 125px" class="img-responsive" /></a></center>
                                 <div class="grid-flex">
                                     <h4>{:$row['name']}</h4>
                                     <p>{:$row['price']}元</p>
                                     <div class="m_3"><a href="__MODULE__/Shoppingcart/addToShoppingcart?goods_id={$row['goods_id']}&num=1" class="link2">添加到购物车</a></div>
-=======
-                                <center><img src="{:$row['img1']}"  style="height:200px; min-height: 125px" class="img-responsive" /></center>
-                                <div class="grid-flex">
-                                    <h4>{:$row['name']}</h4>
-                                    <p>{:$row['price']}元</p>
-                                    <div class="m_3"><a href="#" class="link2">添加到购物车</a></div>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                     <div class="ticket"> </div>
                                 </div>
                                 </li>
@@ -182,10 +169,7 @@
                 </div>
             </div>
             <div class="container">
-<<<<<<< HEAD
                 <if condition="$discount_goods" >
-=======
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                 <div class="content_middle_bottom">
                     <ul class="spinner">
                         <i class="spinner_icon"> </i>
@@ -193,11 +177,7 @@
                         <div class="clearfix"> </div>
                     </ul>
 
-<<<<<<< HEAD
                     
-=======
-                    <if condition="$discount_goods" >
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                         <foreach name="discount_goods" item="row">
 
                             <div class="col-md-4">
@@ -215,7 +195,6 @@
                                         <span class="actual">{:$row['discount_price']}元</span>
                                     </div>
                                 </div>
-<<<<<<< HEAD
                                 <a href="__MODULE__/Goods/index?goods_id={:$row['goods_id']}"><div class="m_3 deal"><div class="link3">我要购买</div></div></a>
                             </div>
 
@@ -223,14 +202,6 @@
                 </div>
                                         </if>
 
-=======
-                                <a href="#"><div class="m_3 deal"><div class="link3">我要购买</div></div></a>
-                            </div>
-
-                        </foreach>
-                    </if>
-                </div>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
             </div>
         </div>
     <include file="./Application/Home/Public/html/footer.html"/>

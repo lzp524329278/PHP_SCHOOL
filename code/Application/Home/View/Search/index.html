@@ -10,15 +10,9 @@
     <script>
         var now_page = 1;
         function inner_data(data) {
-<<<<<<< HEAD
         //console.log(data);
         eval("var json_array=" + data);
         //console.log(json_array);
-=======
-        console.log(data);
-        eval("var json_array=" + data);
-        console.log(json_array);
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
         now_page = json_array.now_page;
         var s = '';
         for (var i = 0; i < json_array.result.length; i++) {
@@ -153,11 +147,7 @@
                             </if>
 
                             <div class="col_1_of_single1 span_1_of_single1"> 
-<<<<<<< HEAD
                                 <a href="__MODULE__/Goods/index?goods_id={$vo.goods_id}"> <img src="{$vo.img1}" class="img-responsive" style="height:200px;" alt=""/>
-=======
-                                <a href="#"> <img src="{$vo.img1}" class="img-responsive" style="height:200px;" alt=""/>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                     <h3>{$vo.name}</h3><p>{$vo.details}</p>
                                     <h4>
                                         <if condition="$vo.discount_status eq 1"> 

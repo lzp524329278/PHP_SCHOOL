@@ -22,16 +22,8 @@ class IndexController extends Controller {
         //查找促销商品
         $discount_goods = $goods->select_discount_goods();
 
-<<<<<<< HEAD
         //$new_goods[0] = array('name' => 'sdf', 'price' => '123', 'img1' => HOME_PUBLIC . "images/n1.jpg");
         //$discount_goods[0] = array('name' => 'sdf', 'price' => '123', 'discount_price' => '123', 'img1' => HOME_PUBLIC . "images/thumb1.jpg");
-=======
-
-
-        //$hot_goods[0] = array('name' => 'sdf', 'price' => '123', 'img1' => HOME_PUBLIC . "images/p1.jpg");
-        $new_goods[0] = array('name' => 'sdf', 'price' => '123', 'img1' => HOME_PUBLIC . "images/n1.jpg");
-        $discount_goods[0] = array('name' => 'sdf', 'price' => '123', 'discount_price' => '123', 'img1' => HOME_PUBLIC . "images/thumb1.jpg");
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
 
         $this->assign('hot_goods', $hot_goods);
         $this->assign('new_goods', $new_goods);

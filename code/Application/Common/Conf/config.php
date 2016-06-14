@@ -14,11 +14,7 @@ return array(
     //
     'SESSION_OPTIONS' => array(
         'type'=>'db',
-<<<<<<< HEAD
         'expire' => 60*100, //过期时间为100分钟
-=======
-        'expire' => 60*10, //过期时间为10分钟
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
     ),
     'SESSION_TABLE'=>'legoushop_session'
 );

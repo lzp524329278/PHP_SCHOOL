@@ -18,7 +18,6 @@ use Think\Controller;
 class GoodsController  extends Controller{
     //put your code here
     public function index(){
-<<<<<<< HEAD
         if(isset($_GET)&&$_GET['goods_id']){
             $gooods=new \Home\Model\GoodsModel();
             $result=$gooods->select_goods_detail($_GET['goods_id']);
@@ -39,8 +38,5 @@ class GoodsController  extends Controller{
                 //dump($other);
             }
         }
-=======
-        $this->display();
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
     }
 }

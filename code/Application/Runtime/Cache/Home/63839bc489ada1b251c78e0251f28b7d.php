@@ -1,7 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
     <head>
-<<<<<<< HEAD
     <head>
     <script type="application/x-javascript">
         addEventListener("load", function() { setTimeout(hideURLbar, 0);}, false); 
@@ -9,15 +8,6 @@
         window.scrollTo(0,1); 
         } 
     </script>
-=======
-        <head>
-    <script type="application/x-javascript">
-       addEventListener("load", function() { setTimeout(hideURLbar, 0);}, false); 
-       function hideURLbar(){ 
-                    window.scrollTo(0,1); 
-       } 
-     </script>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
     <!-- jQuery 组件导入 -->
     <link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
 
@@ -30,7 +20,6 @@
     <!-- start menu -->
     <link href="<?php echo HOME_PUBLIC; ?>css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/megamenu.js"></script>
-<<<<<<< HEAD
 <script type='text/javascript' src='<?php echo HOME_PUBLIC;?>js/easydialog.min.js'></script>
 <link href='<?php echo HOME_PUBLIC;?>css/easydialog.css' rel='stylesheet' type='text/css' />
 <script>
@@ -55,19 +44,11 @@
                 return false;
             }
         }
-=======
-    <script>$(document).ready(function () {
-            $(".megamenu").megamenu();
-            
-        });
-        
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
         function ajaxFunction() {
             var xmlHttp = false;
             try {
                 xmlHttp = new ActiveXObject("Msxml2.XMLHTTP"); // ie msxml3.0+（IE7.0及以上）  
             } catch (e) {
-<<<<<<< HEAD
                 //alert('第一个不好使');
                 try {
                     xmlHttp = new ActiveXObject("Microsoft.XMLHTTP"); //ie msxml2.6（IE5/6）  
@@ -90,46 +71,10 @@
                     document.getElementById('orderby').value = 'orderby';
                 }
                 //window.location='/PHP_SCHOOL/code/index.php/Home/Search/index?page=1&keyword='+document.search_form.keyword.value;
-=======
-                try {
-                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP"); //ie msxml2.6（IE5/6）  
-                } catch (e2) {
-                    xmlHttp = new XMLHttpRequest();
-                }
-            } finally {
-                return xmlHttp;
-            }
-        }  
-//        function search(){
-////           var xhr = ajaxFunction();
-////            if (!xhr) {
-////                // alert('asf');
-////                return false;
-////            }
-////            xhr.onreadystatechange = function () {
-////                if (xhr.readyState == 4) {
-////                    //alert('asf');
-////                    //console.log(xhr.responseText);
-////                    document.getElementById('content').innerHTML=xhr.responseText;
-////                }
-////            }
-//            //xhr.open('get', '/PHP_SCHOOL/code/index.php/Home/Search/index?keyword='+encodeURIComponent(document.search_form.keyword.value));
-//            window.location='/PHP_SCHOOL/code/index.php/Home/Search/index?keyword='+encodeURIComponent(document.search_form.keyword.value);
-//            //xhr.send(null);
-//        }
-        function check_search() {
-            if (document.search_form.keyword.value == '商品搜索') {
-                alert('请输入搜索条件');
-            } else {
-                if(document.getElementById('orderby')){
-                   document.getElementById('orderby').value='orderby';
-                }
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                 return true;
             }
             return false;
         }
-<<<<<<< HEAD
         var temp = "";
         var flag = true;
         function do_ajax(func, url, send, callback) {
@@ -274,25 +219,6 @@
                 });
                 return false;
             }
-=======
-//        function ajax_get_login() {
-//
-//            var xhr = ajaxFunction();
-//            if (!xhr) {
-//                // alert('asf');
-//                return false;
-//            }
-//            xhr.onreadystatechange = function () {
-//                if (xhr.readyState == 4) {
-//                    //alert('asf');
-//                    //console.log(xhr.responseText);
-//                    document.getElementById('content').innerHTML=xhr.responseText;
-//                }
-//            }
-//            xhr.open('get', '/PHP_SCHOOL/code/index.php/Home/User/login.html');
-//            xhr.send(null);
-//        }
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
     </script>
 </head>
 <body>
@@ -300,7 +226,6 @@
         <div class="container">
             <div class="header_top-box">
                 <div class="cssmenu">
-<<<<<<< HEAD
                     <ul id='user_name'>
                         <?php if(session('?user_id')): ?><li class="active"><a href="#" ><?php echo session('user_name');?></a></li> 
                             <li><a href="/PHP_SCHOOL/code/index.php/Home/Shoppingcart/index.html"> 购物车</a></li>
@@ -308,15 +233,6 @@
                             <?php else: ?> 
                             <li><a href="javascript:ajax_get_login(0)">登录</a></li> 
                             <li><a href="javascript:ajax_get_register(0)">注册</a></li><?php endif; ?>
-=======
-                    <ul>
-                        <?php if(session('?user_id')): ?><li class="active"><a href="#"><?php echo session('user_name');?></a></li> 
-                            <li><a href="/PHP_SCHOOL/code/index.php/Home/Order/index.html"> 购物车</a></li>
-                            <li><a href="/PHP_SCHOOL/code/index.php/Home/User/logout.html">注销</a></li> 
-                            <?php else: ?> 
-                            <li><a href="javascript:ajax_get_login()">登录</a></li> 
-                            <li><a href="/PHP_SCHOOL/code/index.php/Home/User/register.html">注册</a></li><?php endif; ?>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                     </ul>
                 </div>
                 <div class="clearfix"></div>
@@ -338,23 +254,14 @@
                             <input type="text" value="商品搜索" id='keyword' name="keyword" onfocus="this.value = '';" onblur="if (this.value == '') {
                                         this.value = '商品搜索';
                                     }">
-<<<<<<< HEAD
                             <input type="submit" value="" onclick='return check_search();'>
-=======
-                                    <input type="submit" value="" onclick='return check_search();'>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                         </form>
                     </div>
                     <ul class="bag">
                         <a href="#"><i class="bag_left"> </i></a>
                         <a href="#"><li class="bag_right">
-<<<<<<< HEAD
                                 <p style="text-align: center;" id='total_price'>
                             <?php if(session('?shoppingcart_money')): echo session('shoppingcart_money');?>
-=======
-                                <p style="text-align: center;">
-                            <?php if(session('?user_id')): echo session('shoppingcart_money');?>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                 <?php else: ?>
                                 0.00元<?php endif; ?>
                             </p> </li></a>
@@ -520,7 +427,6 @@
         </div>
     </div>
 
-<<<<<<< HEAD
     <title>商品详情页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -649,157 +555,6 @@
         </script>
     </div>
 <link href="<?php echo HOME_PUBLIC; ?>css/footer.css" rel='stylesheet' type='text/css' />
-=======
-        <title>商品详情页</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
-
-        <link href="<?php echo HOME_PUBLIC; ?>css/style.css" rel='stylesheet' type='text/css' />
-
-        <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/jquery-1.11.1.min.js"></script>
-        <link rel="stylesheet" href="<?php echo HOME_PUBLIC; ?>css/etalage.css">
-        <script src="<?php echo HOME_PUBLIC; ?>js/jquery.etalage.min.js"></script>
-        <script>
-            jQuery(document).ready(function ($) {
-
-                $('#etalage').etalage({
-                    thumb_image_width: 300,
-                    thumb_image_height: 400,
-                    source_image_width: 900,
-                    source_image_height: 1200,
-                    show_hint: true,
-                    click_callback: function (image_anchor, instance_id) {
-                        alert('Callback example:\nYou clicked on an image with the anchor: "' + image_anchor + '"\n(in Etalage instance: "' + instance_id + '")');
-                    }
-                });
-
-            });
-        </script>
-    </head>
-    <body>
-    <div class="men">
-        <div class="container">
-            <div class="single_top">
-                <div class="col-md-9 single_right">
-                    <div class="grid images_3_of_2">
-                        <ul id="etalage">
-                            <li>
-                                <a href="optionallink.html">
-                                    <img class="etalage_thumb_image" src="<?php echo HOME_PUBLIC; ?>images/s1.jpg" class="img-responsive" />
-                                    <img class="etalage_source_image" src="<?php echo HOME_PUBLIC; ?>images/s1.jpg" class="img-responsive" title="" />
-                                </a>
-                            </li>
-                            <li>
-                                <img class="etalage_thumb_image" src="<?php echo HOME_PUBLIC; ?>images/s2.jpg" class="img-responsive" />
-                                <img class="etalage_source_image" src="<?php echo HOME_PUBLIC; ?>images/s2.jpg" class="img-responsive" title="" />
-                            </li>
-                            <li>
-                                <img class="etalage_thumb_image" src="<?php echo HOME_PUBLIC; ?>images/s3.jpg" class="img-responsive"  />
-                                <img class="etalage_source_image" src="<?php echo HOME_PUBLIC; ?>images/s3.jpg"class="img-responsive"  />
-                            </li>
-                            <li>
-                                <img class="etalage_thumb_image" src="<?php echo HOME_PUBLIC; ?>images/s4.jpg" class="img-responsive"  />
-                                <img class="etalage_source_image" src="<?php echo HOME_PUBLIC; ?>images/s4.jpg"class="img-responsive"  />
-                            </li>
-                        </ul>
-                        <div class="clearfix"></div>		
-                    </div> 
-                    <div class="desc1 span_3_of_2">
-                        <h1>商品名</h1>
-                        <span>888元</span><p class="m_5"><span class="reducedfrom">999元</span></p>
-                        <div class="btn_form">
-                            <form>
-                                <input type="submit" value="点击购买" title="">
-                            </form>
-                        </div>
-                        <span class="m_link"><a href="#">添加到 购物车</a> </span>
-                        <p class="m_text2">商家特殊留言</p>
-                    </div>
-                    <div class="clearfix"></div>	
-                </div>
-                <div class="col-md-3">
-                    <!-- FlexSlider -->
-                    <section class="slider_flex">
-                        <div class="flexslider">
-                            <ul class="slides">
-                                <li><img src="<?php echo HOME_PUBLIC; ?>images/pic4.jpg" class="img-responsive" alt=""/></li>
-                                <li><img src="<?php echo HOME_PUBLIC; ?>images/pic7.jpg" class="img-responsive" alt=""/></li>
-                                <li><img src="<?php echo HOME_PUBLIC; ?>images/pic6.jpg" class="img-responsive" alt=""/></li>
-                                <li><img src="<?php echo HOME_PUBLIC; ?>images/pic5.jpg" class="img-responsive" alt=""/></li>
-                            </ul>
-                        </div>
-                    </section>
-                    <!-- FlexSlider -->
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-            <div class="toogle">
-                <h2>产品详情</h2>
-                <p class="m_text2">这里是产品详情</p>
-            </div>
-            <div class="toogle">
-                <h2>更多信息</h2>
-                <p class="m_text2">这里是更多信息</p>
-            </div>
-            <h4 class="head_single">相关产品</h4>
-            <div class="span_3">
-                <div class="col-sm-3 grid_1">
-                    <a href="#">
-                        <img src="<?php echo HOME_PUBLIC; ?>images/pic9.jpg" class="img-responsive" alt=""/>
-                        <h3>商品名</h3>
-                        <p>商品详情</p>
-                        <h4>399元</h4>
-                    </a>  
-                </div> 
-                <div class="col-sm-3 grid_1">
-                    <a href="#">
-                        <img src="<?php echo HOME_PUBLIC; ?>images/pic8.jpg" class="img-responsive" alt=""/>
-                        <h3>商品名</h3>
-                        <p>商品详情</p>
-                        <h4>399元</h4>
-                    </a>  
-                </div> 
-                <div class="col-sm-3 grid_1">
-                    <a href="#">
-                        <img src="<?php echo HOME_PUBLIC; ?>images/pic1.jpg" class="img-responsive" alt=""/>
-                        <h3>商品名</h3>
-                        <p>商品详情</p>
-                        <h4>399元</h4>
-                    </a>  
-                </div> 
-                <div class="col-sm-3 grid_1">
-                    <a href="#">
-                        <img src="<?php echo HOME_PUBLIC; ?>images/pic3.jpg" class="img-responsive" alt=""/>
-                        <h3>商品名</h3>
-                        <p>商品详情</p>
-                        <h4>399元</h4>
-                    </a>  
-                </div> 
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-
-    <link href="<?php echo HOME_PUBLIC; ?>css/flexslider.css" rel='stylesheet' type='text/css' />
-    <script defer src="<?php echo HOME_PUBLIC; ?>js/jquery.flexslider.js"></script>
-    <script type="text/javascript">
-            $(function () {
-                SyntaxHighlighter.all();
-            });
-            $(window).load(function () {
-                $('.flexslider').flexslider({
-                    animation: "slide",
-                    start: function (slider) {
-                        $('body').removeClass('loading');
-                    }
-                });
-            });
-    </script>
-    <link href="<?php echo HOME_PUBLIC; ?>css/footer.css" rel='stylesheet' type='text/css' />
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
 <div class="footer">
 	<div class="container">
 		<!--<img src="images/pay.png" class="img-responsive" alt=""/>

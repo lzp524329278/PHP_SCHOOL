@@ -1,7 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
     <head>
-<<<<<<< HEAD
         <title>订单列表</title>
     <head>
     <script type="application/x-javascript">
@@ -10,25 +9,6 @@
         window.scrollTo(0,1); 
         } 
     </script>
-=======
-        <title>购物车</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-
-        <link href="css/style.css" rel='stylesheet' type='text/css' />
-        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-    </head>
-    <body>
-    <head>
-    <script type="application/x-javascript">
-       addEventListener("load", function() { setTimeout(hideURLbar, 0);}, false); 
-       function hideURLbar(){ 
-                    window.scrollTo(0,1); 
-       } 
-     </script>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
     <!-- jQuery 组件导入 -->
     <link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
 
@@ -41,7 +21,6 @@
     <!-- start menu -->
     <link href="<?php echo HOME_PUBLIC; ?>css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/megamenu.js"></script>
-<<<<<<< HEAD
 <script type='text/javascript' src='<?php echo HOME_PUBLIC;?>js/easydialog.min.js'></script>
 <link href='<?php echo HOME_PUBLIC;?>css/easydialog.css' rel='stylesheet' type='text/css' />
 <script>
@@ -66,19 +45,11 @@
                 return false;
             }
         }
-=======
-    <script>$(document).ready(function () {
-            $(".megamenu").megamenu();
-            
-        });
-        
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
         function ajaxFunction() {
             var xmlHttp = false;
             try {
                 xmlHttp = new ActiveXObject("Msxml2.XMLHTTP"); // ie msxml3.0+（IE7.0及以上）  
             } catch (e) {
-<<<<<<< HEAD
                 //alert('第一个不好使');
                 try {
                     xmlHttp = new ActiveXObject("Microsoft.XMLHTTP"); //ie msxml2.6（IE5/6）  
@@ -101,29 +72,10 @@
                     document.getElementById('orderby').value = 'orderby';
                 }
                 //window.location='/PHP_SCHOOL/code/index.php/Home/Search/index?page=1&keyword='+document.search_form.keyword.value;
-=======
-                try {
-                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP"); //ie msxml2.6（IE5/6）  
-                } catch (e2) {
-                    xmlHttp = new XMLHttpRequest();
-                }
-            } finally {
-                return xmlHttp;
-            }
-        }  
-        function check_search() {
-            if (document.search_form.keyword.value == '商品搜索') {
-                alert('请输入搜索条件');
-            } else {
-                if(document.getElementById('orderby')){
-                   document.getElementById('orderby').value='orderby';
-                }
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                 return true;
             }
             return false;
         }
-<<<<<<< HEAD
         var temp = "";
         var flag = true;
         function do_ajax(func, url, send, callback) {
@@ -264,40 +216,6 @@
                         document.getElementById('password').innerHTML = result.error.password == undefined ? '' : result.error.password;
                         document.getElementById('password2').innerHTML = result.error.password2 == undefined ? '' : result.error.password2;
                         document.getElementById('email').innerHTML = result.error.email == undefined ? '' : result.error.email;
-=======
-         var temp = "";
-            function do_ajax(func, url, send, callback) {
-                var xhr = ajaxFunction();
-                if (!xhr) {
-                    return false;
-                }
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4 && xhr.responseText) {
-                        callback(xhr.responseText);
-                    }
-                }
-                xhr.open(func, url);
-                xhr.send(send);
-            }
-            function ajax_get_login() {
-                do_ajax('get', '/PHP_SCHOOL/code/index.php/Home/User/login.html', null, function (data) {
-                    temp = document.getElementById('content').innerHTML;
-                    document.getElementById('content').innerHTML = data;
-                });
-            }
-            function ajax_post_login() {
-                do_ajax('post', '/PHP_SCHOOL/code/index.php/Home/User/login.html', new FormData(document.login_form), function (data) {
-                    eval('var result=' + data);
-                    console.log(result);
-                    if (result.result) {
-                        document.getElementById('content').innerHTML = temp;
-                        document.getElementById('user_name').innerHTML='<li class="active"><a href="#" >'+result.user_name+
-                                '</a></li><li><a href="/PHP_SCHOOL/code/index.php/Home/Order/index.html"> 购物车</a></li>'+
-                            '<li><a href="/PHP_SCHOOL/code/index.php/Home/User/logout.html">注销</a></li> ';
-                                //;
-                    }else{
-                        document.getElementById('error').innerHTML="用户名或密码错误";
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                     }
                 });
                 return false;
@@ -311,19 +229,11 @@
                 <div class="cssmenu">
                     <ul id='user_name'>
                         <?php if(session('?user_id')): ?><li class="active"><a href="#" ><?php echo session('user_name');?></a></li> 
-<<<<<<< HEAD
                             <li><a href="/PHP_SCHOOL/code/index.php/Home/Shoppingcart/index.html"> 购物车</a></li>
                             <li><a href="/PHP_SCHOOL/code/index.php/Home/User/logout.html">注销</a></li> 
                             <?php else: ?> 
                             <li><a href="javascript:ajax_get_login(0)">登录</a></li> 
                             <li><a href="javascript:ajax_get_register(0)">注册</a></li><?php endif; ?>
-=======
-                            <li><a href="/PHP_SCHOOL/code/index.php/Home/Order/index.html"> 购物车</a></li>
-                            <li><a href="/PHP_SCHOOL/code/index.php/Home/User/logout.html">注销</a></li> 
-                            <?php else: ?> 
-                            <li><a href="javascript:ajax_get_login()">登录</a></li> 
-                            <li><a href="/PHP_SCHOOL/code/index.php/Home/User/register.html">注册</a></li><?php endif; ?>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                     </ul>
                 </div>
                 <div class="clearfix"></div>
@@ -345,23 +255,14 @@
                             <input type="text" value="商品搜索" id='keyword' name="keyword" onfocus="this.value = '';" onblur="if (this.value == '') {
                                         this.value = '商品搜索';
                                     }">
-<<<<<<< HEAD
                             <input type="submit" value="" onclick='return check_search();'>
-=======
-                                    <input type="submit" value="" onclick='return check_search();'>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                         </form>
                     </div>
                     <ul class="bag">
                         <a href="#"><i class="bag_left"> </i></a>
                         <a href="#"><li class="bag_right">
-<<<<<<< HEAD
                                 <p style="text-align: center;" id='total_price'>
                             <?php if(session('?shoppingcart_money')): echo session('shoppingcart_money');?>
-=======
-                                <p style="text-align: center;">
-                            <?php if(session('?user_id')): echo session('shoppingcart_money');?>
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
                                 <?php else: ?>
                                 0.00元<?php endif; ?>
                             </p> </li></a>
@@ -527,7 +428,6 @@
         </div>
     </div>
 
-<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -661,17 +561,6 @@
         </div>
     </div>
 <link href="<?php echo HOME_PUBLIC; ?>css/footer.css" rel='stylesheet' type='text/css' />
-=======
-    <div class="men">
-        <div class="container">
-            <div class="wishlist">
-                <h4 class="title">购物车为空</h4>
-                <p class="cart">你的购物车中没有商品.请点击<a href="<?php echo INDEX_PATH;?>">这里</a> 去浏览商品</p>
-            </div>
-        </div>
-    </div>
-    <link href="<?php echo HOME_PUBLIC; ?>css/footer.css" rel='stylesheet' type='text/css' />
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff
 <div class="footer">
 	<div class="container">
 		<!--<img src="images/pay.png" class="img-responsive" alt=""/>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
 /*
@@ -33,17 +32,3 @@ class OrderController extends Controller {
         $this->display();
     }
 }
-=======
-<?php
-
-namespace Home\Controller;
-
-use Think\Controller;
-
-class OrderController extends Controller {
-
-    public function index(){
-        $this->display();
-    }
-}
->>>>>>> eca857d6cdd15586d8a785693bd5cf009ea61bff

@@ -23,7 +23,10 @@ define('APP_PATH','./Application/');
 define('INDEX_PATH','/PHP_SCHOOL/code/index.php');
 
 define('HOME_PUBLIC','/PHP_SCHOOL/code/Application/Home/Public/');
+
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 
+
+ini_set("session.save_handler", "user");
 // 亲^_^ 后面不需要任何代码了 就是如此�?�?

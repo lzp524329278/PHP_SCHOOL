@@ -1,0 +1,561 @@
+[ 2016-05-06T10:16:00+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.155002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.140003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.140003s ]
+NOTIC: [2] mysql_connect():  F:\PHP_workspace\PHP_SCHOOL\code\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [2] mysql_select_db() expects parameter 2 to be resource, boolean given F:\PHP_workspace\PHP_SCHOOL\code\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 1 F:\PHP_workspace\PHP_SCHOOL\code\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 124 行.
+NOTIC: [2] mysql_query() expects parameter 2 to be resource, null given F:\PHP_workspace\PHP_SCHOOL\code\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 125 行.
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-05-06T10:17:53+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.1200s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0025s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.605009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.605009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.075001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.075001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.077502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.077502s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:19:03+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 77 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 262 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:19:03+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+ERR: 非法操作:js
+
+[ 2016-05-06T10:19:06+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_user` [ RunTime:0.3425s ]
+SQL: SELECT * FROM `legoushop_user` WHERE `user_id` = '2013592110' AND `password` = '2013592110'  [ RunTime:0.0000s ]
+
+[ 2016-05-06T10:19:07+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+SQL: SHOW COLUMNS FROM `legoushop_shoppingcart` [ RunTime:0.3550s ]
+SQL: SELECT `num`,`per_price` FROM `legoushop_shoppingcart` WHERE `user_id` = '2013592110'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0000s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:19:09+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-06T10:19:09+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0025s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:19:24+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 77 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 262 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:19:24+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:js
+
+[ 2016-05-06T10:19:25+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `legoushop_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `legoushop_user` WHERE `user_id` = '2013592110' AND `password` = '2013592110'  [ RunTime:0.0000s ]
+
+[ 2016-05-06T10:19:25+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `legoushop_shoppingcart` [ RunTime:0.0025s ]
+SQL: SELECT `num`,`per_price` FROM `legoushop_shoppingcart` WHERE `user_id` = '2013592110'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0025s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:19:28+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-06T10:19:28+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0025s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:32:51+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0000s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:32:56+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 77 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 262 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:32:56+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:js
+
+[ 2016-05-06T10:33:10+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `legoushop_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `legoushop_user` WHERE `user_id` = '2013592110' AND `password` = '2013592110'  [ RunTime:0.0000s ]
+
+[ 2016-05-06T10:33:10+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_shoppingcart` [ RunTime:0.0000s ]
+SQL: SELECT `num`,`per_price` FROM `legoushop_shoppingcart` WHERE `user_id` = '2013592110'  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0025s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:33:56+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-06T10:33:56+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0025s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:33:57+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 78 行.
+NOTIC: [8] Undefined variable: value F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 249 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 250 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 255 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 260 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 265 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 270 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 275 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:34:54+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_user` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: validate F:\PHP_workspace\PHP_SCHOOL\code\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `user_id` FROM `legoushop_user` WHERE `user_id` = '2013592110'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 78 行.
+NOTIC: [8] Undefined variable: value F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 249 行.
+NOTIC: [8] Undefined index: password2 F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 260 行.
+NOTIC: [8] Undefined index: email F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 265 行.
+NOTIC: [8] Undefined index: user_name F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 270 行.
+NOTIC: [8] Undefined index: telphone_num F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:35:48+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `legoushop_user` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: validate F:\PHP_workspace\PHP_SCHOOL\code\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `user_id` FROM `legoushop_user` WHERE `user_id` = '1234567'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto F:\PHP_workspace\PHP_SCHOOL\code\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `legoushop_user` (`user_id`,`password`,`email`,`user_name`,`telphone_num`,`address`) VALUES ('1234567','1234567','524329278@qq.com','李兆鹏','15764562373','黑龙江黑河') [ RunTime:0.1800s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\2dc085e573ff8b99d81fcafe8e0d36c9.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-06T10:35:52+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 77 行.
+NOTIC: [8] Undefined variable: error F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 262 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:35:52+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:js
+
+[ 2016-05-06T10:36:04+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `legoushop_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `legoushop_user` WHERE `user_id` = '1234567' AND `password` = '1234567'  [ RunTime:0.0000s ]
+
+[ 2016-05-06T10:36:05+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `legoushop_shoppingcart` [ RunTime:0.0025s ]
+SQL: SELECT `num`,`per_price` FROM `legoushop_shoppingcart` WHERE `user_id` = '1234567'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0025s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+
+[ 2016-05-06T10:37:45+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-05-06T10:37:46+08:00 ] 127.0.0.1 /PHP_SCHOOL/code/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `legoushop_goods` [ RunTime:0.0025s ]
+SQL: select name,price,img1,amount from legoushop.legoushop_goods order by amount DESC limit 4 [ RunTime:0.0000s ]
+SQL: select name,price,img1,create_time from legoushop.legoushop_goods order by create_time DESC limit 5 [ RunTime:0.0000s ]
+SQL: select name,price,discount_price,img1,discount_start_time,discount_end_time,create_time from legoushop.legoushop_goods where discount_status=1 and discount_start_time<now() and discount_end_time>now() order by create_time DESC limit 3 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: shoppingcart_money F:\PHP_workspace\PHP_SCHOOL\code\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2] ini_set(): A session is active. You cannot change the session module's ini settings at this time F:\PHP_workspace\PHP_SCHOOL\code\index.php 第 31 行.
+

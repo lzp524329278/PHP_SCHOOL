@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <include file="./Application/Home/Public/html/head.html"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>交易详情</title>
+    <link rel="stylesheet" href="<?php echo HOME_PUBLIC; ?>css/global-min.css">
+    <link rel="stylesheet" href="<?php echo HOME_PUBLIC; ?>css/normal-min.css">
+</head>
+<body id="trade-order-detail"   class="tm-buyer">
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading" >交易详情</div>
+        </div>
+        <div id="page">
+            <!-- <link href="//g.alicdn.com/tp/trademanager/4.11.3/common/search-min.css" rel="stylesheet"> -->
+            <div id="content">
+                <div id="detail-panel" class="grid-c" data-spm="2">
+                    <div class="box order-dashboard">
+                    </div>
+                    <div class="tabs-container" id="J_TabView" data-spm="3">
+                        <div class="bd">
+                            <div class="trade-status">
+                                <strong>当前订单状态：<span class="wait">交易关闭</span></strong>
+                                <span class="wait-reason">取消原因：超时关闭</span>
+                            </div>
+<!--                            <div class="actions operate">
+                                <span class="skin-gray"><a class="short-btn" href="#">标记</a></span>
+                            </div>-->
+                        </div>
+                        <ul class="tabs-nav">
+<!--                            <li class="current"><a name="tab0">订单信息</a></li>-->
+                        </ul>
+                        <div class="tabs-panels">
+                            <div class="info-box order-info">
+                                <h2>订单信息</h2>
+                                
+                                <div class="bd">
+                                    <table>
+                                        <colgroup>
+                                            <col width="260" />
+                                            <col width="110" />
+                                            <!-- 宝贝 -->
+                                            <col class="col1"/>
+                                            <!-- 交易状态 -->
+                                            <col class="col2"/>
+                                            <!-- 单价（元） -->
+                                            <col class="col3"/>
+                                            <!-- 数量 -->
+                                            <col class="col4"/>
+                                            <!-- 优惠 -->
+                                            <col class="col5"/>
+                                            <!-- 合计（元） -->
+                                            <col class="col6"/>
+                                            <!-- 运费（元） -->
+                                            <!-- 买/卖家信息 -->
+                                        </colgroup>
+                                        <!-- 订单信息 -->
+                                        <tbody class="misc-info">
+<!--                                            <tr class="sep-row">
+                                                <td colspan="8"></td>
+                                            </tr>-->
+                                            <tr>
+                                                <th colspan="8"><h4>订单信息</h4></th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span >&nbsp;&nbsp;&nbsp;&nbsp;订单编号：</span><span >1971736197671019</span>
+                                                    <span >&nbsp;&nbsp;&nbsp;&nbsp;成交时间：</span> <span class="trade-time">2016-06-06 11:47:10</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                        <!-- 订单信息 -->
+                                        <tbody class="order">
+                                            <tr class="sep-row">
+                                                <td colspan="8"></td>
+                                            </tr>
+                                            <tr class="order-hd"> 
+                                                <th class="item">宝贝</th>
+                                                <th class="sku">宝贝属性</th>
+                                                <th class="status">状态</th>
+                                                <th class="price">单价(元)</th>
+                                                <th class="num">数量</th>
+                                                <th class="discount">优惠</th>
+                                                <th class="order-price">商品总价(元)</th>
+                                                <th class="post-fee">运费(元)</th>
+                                            </tr> 
+                                            <tr class="order-item">
+                                                <td class="item">
+                                                    <div class="pic-info">
+                                                        <div class="pic s50">
+                                                            <a hidefocus="true" href="#" target="_blank" title="商品图片"><img alt="查看宝贝详情" src="//img.alicdn.com/bao/uploaded/i4/TB1e7dLGXXXXXXNXpXXXXXXXXXX_!!0-item_pic.jpg_sum.jpg "/></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="txt-info">
+                                                        <div class="desc">
+                                                            <span class="name"><a href="#" title="黑龙江 移动手机话费充值10元 快充直充 24小时自动充 即时到帐" 
+                                                                                  target="_blank">黑龙江 移动手机话费充值10元 快充直充 24小时自动充 即时到帐</a></span>
+                                                            <br />
+                                                            <span class="good-icons"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="sku">
+                                                    -
+                                                </td>
+
+                                                <td class="status" rowspan="1">
+                                                    已取消<a class="refund-reason J_ViewReason" href="#" title="取消原因：  超时关闭  ">
+                                                        <img src="//assets.alicdn.com/app/trade/img/view_reason.png" /></a>
+                                                </td>
+                                                <td class="price">9.98</td>
+                                                <td class="num">1</td>
+                                                <td class="discount">
+                                                    -
+                                                </td>
+                                                <td class="order-price" rowspan="1">9.98</td>
+                                                <td class="post-fee" rowspan="1">
+                                                    <span>0.00</span>
+                                                    <br/>
+                                                    (自动充值)
+                                                </td>
+                                            </tr>
+                                            <tr class="order-ft">
+                                                <td colspan="8">
+                                                   
+                                                    <div class="get-money" colspan="6">
+                                                        <br/>
+                                                        实付款：
+                                                        <strong>9.98</strong>元<br/>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                            
+                                    <table class=" logistics-list">
+                                        <col class="label" >
+                                        <col class="info">
+                                        <col>
+                                        <tbody>
+                                            <tr class="sep-row">
+                                                <td colspan="3"></td>
+                                            </tr>
+                                            <tr>
+<!--                                                <th colspan="3"><h4 >物流信息</h4></th>-->
+                                            </tr>
+                                            <tr>
+                                                <td>收货地址：</td>
+                                                <td>李兆鹏，15764562373</td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td >运送方式：</td>
+                                                <td>自动充值</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td >买家留言：</td>
+                                                <td><span id="J_ExistMessage"></span></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            </div>
+            </div>
+
+            
+                <include file="./Application/Home/Public/html/footer.html"/>
+                </body>
+                </html>

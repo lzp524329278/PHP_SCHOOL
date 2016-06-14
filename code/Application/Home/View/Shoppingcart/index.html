@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>购物车</title>
+    <include file="./Application/Home/Public/html/head.html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="<?php echo HOME_PUBLIC; ?>css/order.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo HOME_PUBLIC; ?>css/style.css" rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/jquery-1.11.1.min.js"></script>
+    <script>
+        function ajax_delete_shoppingcart(id) {
+        do_ajax('get', "__ACTION__" + "?func=delete&id=" + id, null, function(data){
+        eval('var result=' + data);
+        if (result.result){
+        document.getElementById('shoppingcart' + id).innerHTML = '';
+        document.getElementById('total_price').innerHTML = result.total_price;
+        document.getElementById('total_price2').innerHTML = "购物金额小计 ￥" + result.total_price;
+        }
+        });
+        }
+        function ajax_change_shoppingcart(id, num) {
+        do_ajax('get', "__ACTION__" + "?func=change&id=" + id + "&num=" + num, null, function(data){
+        console.log(data);
+        eval('var result=' + data);
+        if (result.result){
+        //console.log(id);
+        //console.log(num);
+        document.getElementById('num' + id).value = num;
+        document.getElementById('num_' + id).value = num;
+        document.getElementById('total_price').innerHTML = result.total_price;
+        document.getElementById('total_price2').innerHTML = "购物金额小计 ￥" + result.total_price;
+        var per = document.getElementById('per_price_' + id).innerHTML;
+        //consloe.log(per);
+        per = per.slice(1);
+        per = per.slice(0, - 1);
+        per = Number(per);
+        //console.log(num*per);
+        document.getElementById('total_price_' + id).innerHTML = num * per + "元";
+        }
+        });
+        return false;
+        }
+        function clickButton(id, num)
+        {
+        if (event.keyCode == 13)
+        {
+        ajax_change_shoppingcart(id, num);
+        return false;
+        }
+        }
+        function ajax_delete_all_shoppingcart(){
+        do_ajax('get', "__ACTION__" + "?func=deleteall", null, function(data){
+        eval('var result=' + data);
+        if (result.result){
+       // document.getElementById('all_shopping_cart').innerHTML = '';
+       $("#shppingcart_th").siblings().remove();
+        document.getElementById('total_price').innerHTML = result.total_price;
+        document.getElementById('total_price2').innerHTML = "购物金额小计 ￥" + result.total_price;
+        }
+        });
+        }
+    </script>
+</head>
+<body>
+
+    <div id="content">
+        <div class="container" >
+            <div class="flowBox">
+                <div class="panel panel-default">
+                    <div class="panel-heading" >商品列表</div>
+                </div>
+                <form id="formCart" name="formCart" >
+                    <table class="table table-bordered" width="99%" align="center" border="1" cellpadding="215" cellspacing="11" bgcolor="#dddddd">
+                        <tr id="shppingcart_th">
+                            <th bgcolor="#ffffff">商品名称</th>
+                            <th bgcolor="#ffffff">属性</th>
+                            <th bgcolor="#ffffff">本店售价:</th>
+                            <th bgcolor="#ffffff">购买数量</th>
+                            <th bgcolor="#ffffff">小计</th>
+                            <th bgcolor="#ffffff">操作</th>
+                        </tr>
+                        
+                        <volist name="result" id="vo">
+                            <tr id='shoppingcart{$vo.id}'>
+                                <td bgcolor="#ffffff" align="center" style="width:300px;">
+                                    <a href="__MODULE__/Goods/index?goods_id={$vo.goods_id}" target="_blank"><img style="width:80px; height:80px;" src="{$vo.img1}" border="0" title="{$vo.name}" /></a><br />
+                                    <a href="__MODULE__/Goods/index?goods_id={$vo.goods_id}" target="_blank" class="f6">{$vo.name}</a>
+                                </td>
+                                <td bgcolor="#ffffff" style="vertical-align: inherit;"></td>
+                                <td align="center" id='per_price_{$vo.id}'bgcolor="#ffffff" style="vertical-align: inherit;" >￥{$vo.per_price}元</td>
+                                <td align="center" bgcolor="#ffffff" style="vertical-align: inherit;">
+                                    <input type="text" id='num{$vo.id}' value="{$vo.num}" size="4" class="inputBg" style="text-align:center "
+                                           onkeypress="return clickButton({$vo.id}, this.value)"/>
+                                    <input type="hidden" id='num_{$vo.id}' value="{$vo.num}" size="1"/>
+                                </td>
+                                <td align="center" id='total_price_{$vo.id}' bgcolor="#ffffff" style="vertical-align: inherit;">￥{$vo['num'] * $vo.per_price}元</td>
+                                <td align="center" bgcolor="#ffffff" style="vertical-align: inherit;">
+                                    <a href="javascript:void(0)" onclick="ajax_delete_shoppingcart({$vo.id})" class="f6">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                    <table class="table table-bordered" width="99%" align="center" border="1" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+                        <tr>
+                            <td bgcolor="#ffffff" id='total_price2'>
+                                购物金额小计 ￥
+                        <if condition="session('?shoppingcart_money')" >
+                            {:session('shoppingcart_money')}
+                            <else/>
+                            0.00元
+                        </if>             
+                        </td>
+                        <td align="right" bgcolor="#ffffff">
+                            <input type="button" value="清空购物车" class="bnt_blue_1" onclick="ajax_delete_all_shoppingcart()" />
+                            <!--                            <input name="submit" type="submit" class="bnt_blue_1" value="更新购物车" onkeydown="return clickButton()" onclick="return ajax_change_shoppingcart();" />-->
+                        </td>
+                        </tr>
+                    </table>
+                </form>
+                <table width="99%" align="center" border="0" cellpadding="5" cellspacing="0" bgcolor="#dddddd">
+                    <tr>
+                        <td bgcolor="#ffffff"><a href="javascript:history.go(-1);"><img src="<?php echo HOME_PUBLIC; ?>images/continue.gif" alt="continue" /></a></td>
+                        <td bgcolor="#ffffff" align="right"><a href="__CONTROLLER__/buy"><img src="<?php echo HOME_PUBLIC; ?>images/checkout.png" alt="checkout" /></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+<include file="./Application/Home/Public/html/footer.html"/>
+</body>
+</html>		

@@ -11,50 +11,56 @@
         <link href="<?php echo HOME_PUBLIC; ?>css/style.css" rel='stylesheet' type='text/css' />
 
         <script type="text/javascript" src="<?php echo HOME_PUBLIC; ?>js/jquery-1.11.1.min.js"></script>
-
     </head>
     <body>
-    <include file="./Application/Home/Public/html/head.html"/>
+    
     <div class="men">
         <div class="container">
             <div class="col-md-12 register">
-                <form action="__SELF__" method="post">
+                <form name='register_form' onsubmit="return false">
                     <div class="register-top-grid" > 
                         <h3  style="text-align:center;">个人信息</h3>
                         <div>
-                            <span>用户名<label>*</label></span>
-                            <input type="text" name="user_id" value={$value}> 
+                            <span>账号<label>*</label></span>
+                            <input type="text" name="user_id"  value="{:$post['user_id']}"> 
+                            <span  id='user_id_from' style="color: #ff0000" >{:$error['user_id']}</span>
                         </div>
                         <div>
                             <span>密码<label>*</label></span>
-                            <input type="text" name="password">
+                            <input type="password" name="password" value="{:$post['password']}">
+                            <span id='password' style="color: #ff0000">{:$error['password']}</span>
                         </div>
                         <div>
                             <span>确认密码<label>*</label></span>
-                            <input type="text" name="password2">
+                            <input type="password" name="password2" value="{:$post['password2']}">
+                            <span id='password2' style="color: #ff0000">{:$error['password2']}</span>
                         </div>
                         <div>
                             <span>Email<label>*</label></span>
-                            <input type="text" name="email"> 
+                            <input type="text" name="email" value="{:$post['email']}"> 
+                            <span id='email' style="color: #ff0000">{:$error['email']}</span>
                         </div>
                         <div>
                             <span>姓名<label>*</label></span>
-                            <input type="text" name="username"> 
+                            <input type="text" name="user_name" value="{:$post['user_name']}"> 
+                            <span id='user_name_from' style="color: #ff0000">{:$error['user_name']}</span>
                         </div>
                         <div>
                             <span>手机号码<label>*</label></span>
-                            <input type="text" name="telphone_num"> 
+                            <input type="text" name="telphone_num" value="{:$post['telphone_num']}"> 
+                            <span id='telphone_num' style="color: #ff0000">{:$error['telphone_num']}</span>
                         </div>
                         <div class="text">
                             <span>联系地址<label>*</label></span>
-                            <textarea name="address"></textarea>
+                            <textarea name="address" >{:$post['address']}</textarea>
+                            <span id='address' style="color: #ff0000">{:$error['address']}</span>
                         </div>
                     </div>
 
                     <center>
                         <div class="clearfix"> </div>
                         <div class="register-but">
-                            <input type="submit" name="submit" value="提交">
+                            <input type="submit" name="submit" value="提交" onclick="return ajax_post_register()">
                             <div class="clearfix"> </div>
                         </div>
                     </center>
@@ -64,6 +70,5 @@
         </div>
     </div>
 </div>
-<include file="./Application/Home/Public/html/footer.html"/>
 </body>
 </html>		

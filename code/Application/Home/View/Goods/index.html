@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <include file="./Application/Home/Public/html/head.html"/>
+    <title>商品详情页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="<?php echo HOME_PUBLIC; ?>css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+    <link href="<?php echo HOME_PUBLIC; ?>css/style.css" rel='stylesheet' type='text/css' />
+
+    <link rel="stylesheet" href="<?php echo HOME_PUBLIC; ?>css/etalage.css">
+    <script src="<?php echo HOME_PUBLIC; ?>js/jquery.etalage.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            $('#etalage').etalage({
+                thumb_image_width: 300,
+                thumb_image_height: 400,
+                source_image_width: 900,
+                source_image_height: 1200,
+                show_hint: true,
+                click_callback: function (image_anchor, instance_id) {
+//                    alert('Callback example:\nYou clicked on an image with the anchor: "' + image_anchor + '"\n(in Etalage instance: "' + instance_id + '")');
+                }
+            });
+        });
+
+        function add(id){
+            window.location.href='__MODULE__/Shoppingcart/addToShoppingcart?goods_id='+id+'&num=1';
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div id='content'>
+        <div class="men">
+            <div class="container">
+                <div class="single_top">
+                    <div class="col-md-9 single_right">
+                        <div class="grid images_3_of_2">
+                            <ul id="etalage">
+                                <li>
+                                    <a href="optionallink.html">
+                                        <img class="etalage_thumb_image" src="{:$result['img1']}" class="img-responsive" />
+                                        <img class="etalage_source_image" src="{:$result['img1']}" class="img-responsive" title="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <img class="etalage_thumb_image" src="{:$result['img2']}" class="img-responsive" />
+                                    <img class="etalage_source_image" src="{:$result['img2']}" class="img-responsive" title="" />
+                                </li>
+                                <li>
+                                    <img class="etalage_thumb_image" src="{:$result['img3']}" class="img-responsive"  />
+                                    <img class="etalage_source_image" src="{:$result['img3']}" class="img-responsive"  />
+                                </li>
+                                <li>
+                                    <img class="etalage_thumb_image" src="{:$result['img4']}" class="img-responsive"  />
+                                    <img class="etalage_source_image" src="{:$result['img4']}" class="img-responsive"  />
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>		
+                        </div> 
+                        <div class="desc1 span_3_of_2">
+                            <h3>{:$result['name']}</h3>
+                            <span style="color:red;">{:$result['price']}元</span>
+                            <if condition="($result['discount_status'] eq 1)">
+                                <p class="m_5"><span class="reducedfrom">{:$result['discount_price']}元</span></p>
+                            </if>
+                            <p class="m_text2">{$result['message']}</p>
+                            <div class="btn_form">
+                                <form>
+                                    <input type="submit" value="添加到购物车" onclick="return add({:$result['goods_id']})">
+<!--                                    <input type="submit" value="点击购买" onclick="return buy()">-->
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>	
+                    </div>
+                    <div class="col-md-3">
+                        <!-- FlexSlider -->
+                        <section class="slider_flex">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <for start='0' end='count($other2)'>
+                                        <li><a href="__ACTION__?goods_id={$other2[$i]['goods_id']}"><img src="{$other2[$i]['img1']}" class="img-responsive"  style="height:200px" alt=""/></a></li>
+                                    </for>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- FlexSlider -->
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="toogle">
+                    <h2>产品详情</h2>
+                    <p class="m_text2">{$result['details']}</p>
+                </div>
+                <div class="toogle">
+                    <h2>更多信息</h2>
+                    <p class="m_text2">{$result['more']}</p>
+                </div>
+                <h4 class="head_single">相关产品</h4>
+                <div class="span_3">
+                    <for start='0' end='count($other)'>
+                        <div class="col-sm-3 grid_1">
+                            <a href="__ACTION__?goods_id={$other[$i]['goods_id']}">
+                                <img src="{$other[$i]['img1']}" class="img-responsive" style="height:200px" alt=""/>
+                                <h3>{$other[$i]['name']}</h3>
+                                <p>{$other[$i]['details']}</p>
+                                <h4>{$other[$i]['price']}元</h4>
+                            </a>  
+                        </div> 
+                    </for>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+        <link href="<?php echo HOME_PUBLIC; ?>css/flexslider.css" rel='stylesheet' type='text/css' />
+        <script defer src="<?php echo HOME_PUBLIC; ?>js/jquery.flexslider.js"></script>
+        <script type="text/javascript">
+        $(function () {
+            SyntaxHighlighter.all();
+        });
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+        </script>
+    </div>
+<include file="./Application/Home/Public/html/footer.html"/>
+</body>
+</html>		
